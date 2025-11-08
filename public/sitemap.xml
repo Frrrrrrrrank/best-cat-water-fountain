@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Category Pages - Very High Priority -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/best-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/reviews</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/guides</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/blog</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Buying Guides - High Priority -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/guides/how-to-choose-a-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/guides/how-to-clean-and-descale-a-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Best/Ranking Pages - High Priority (Money Pages) -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/best/best-quiet-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/best/best-stainless-steel-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/best/best-budget-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/best/best-ceramic-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/best/best-multi-cat-water-fountain</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Articles - Medium-High Priority (SEO Traffic) -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/blog/why-cats-need-water-fountains</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/blog/how-often-change-cat-fountain-filter</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/blog/plastic-vs-stainless-steel-vs-ceramic-cat-fountains</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Product Reviews - Medium-High Priority (Affiliate Money Pages) -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/reviews/catit-flower-fountain-review</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/reviews/veken-95oz-fountain-review</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/reviews/stainless-steel-premium-review</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Comparison Pages - Medium Priority -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/compare/catit-flower-vs-veken-95oz</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Other Important Pages -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/faq</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/affiliate-disclosure</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Legal Pages - Low Priority (noindex but in sitemap for completeness) -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/privacy-policy</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/terms-of-service</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
