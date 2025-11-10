@@ -4,46 +4,36 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star } from "lucide-react";
 import catitImage from "@/assets/catit-flower.jpg";
 import stainlessImage from "@/assets/stainless-fountain.jpg";
-import vekenImage from "@/assets/veken-fountain.jpg";
 
 const FeaturedPicks = () => {
-  
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const picks = [
     {
       id: 1,
-      name: "Catit Flower Fountain",
-      image: catitImage,
-      badge: "Best Overall",
+      name: "WOPET W03 Wireless Ceramic Fountain",
+      image: catitImage, // TODO: Replace with real WOPET W03 image
+      badge: "Editor's Choice",
       badgeColor: "bg-badge-best",
-      rating: 9.2,
-      bestFor: "Easy Cleaning & Quiet Operation",
-      price: "$29.99",
-      features: ["3 Water Flow Settings", "BPA-Free Plastic", "Ultra Quiet"],
-      link: "/reviews/catit-flower-fountain-review",
+      rating: 4.9,
+      bestFor: "Ultra Quiet & Wireless",
+      price: "$89.99",
+      features: ["< 25dB Ultra Quiet", "30-Day Battery Life", "Premium Ceramic"],
+      link: "/reviews/wopet-w03-wireless-ceramic-fountain-review",
+      affiliateLink: affiliateLink,
     },
     {
       id: 2,
-      name: "Stainless Steel Premium",
-      image: stainlessImage,
-      badge: "Best Quality",
-      badgeColor: "bg-badge-premium",
-      rating: 8.9,
-      bestFor: "Durability & Health",
-      price: "$54.99",
-      features: ["100% Stainless Steel", "Dishwasher Safe", "UV Sterilization"],
-      link: "/reviews/stainless-steel-premium-review",
-    },
-    {
-      id: 3,
-      name: "Veken 95oz Fountain",
-      image: vekenImage,
+      name: "WOPET W03L Ceramic Fountain",
+      image: stainlessImage, // TODO: Replace with real WOPET W03L image
       badge: "Best Value",
       badgeColor: "bg-badge-value",
-      rating: 8.5,
-      bestFor: "Multiple Cats & Budget",
-      price: "$24.99",
-      features: ["Large 95oz Capacity", "LED Light", "3 Filters Included"],
-      link: "/reviews/veken-95oz-fountain-review",
+      rating: 4.7,
+      bestFor: "Premium Quality on Budget",
+      price: "$59.99",
+      features: ["Dishwasher Safe Ceramic", "Ultra Quiet Pump", "Auto Shutoff"],
+      link: "/reviews/wopet-w03l-ceramic-fountain-review",
+      affiliateLink: affiliateLink,
     },
   ];
 
@@ -59,7 +49,7 @@ const FeaturedPicks = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {picks.map((pick) => (
             <Link key={pick.id} to={pick.link} className="group">
               <div className="h-full bg-gradient-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">

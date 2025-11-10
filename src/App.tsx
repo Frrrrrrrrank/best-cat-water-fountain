@@ -8,7 +8,11 @@ import BestCatWaterFountain from "./pages/BestCatWaterFountain";
 import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import NotFound from "./pages/NotFound";
 
-// Review Pages
+// Review Pages - WOPET Products
+import WopetW03Review from "./pages/reviews/WopetW03Review";
+import WopetW03LReview from "./pages/reviews/WopetW03LReview";
+
+// Old Review Pages (Deprecated)
 import CatitFlowerReview from "./pages/reviews/CatitFlowerReview";
 import VekenReview from "./pages/reviews/VekenReview";
 import StainlessSteelReview from "./pages/reviews/StainlessSteelReview";
@@ -55,7 +59,11 @@ const App = () => (
           <Route path="/best-cat-water-fountain" element={<BestCatWaterFountain />} />
           <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
           
-          {/* Review Pages */}
+          {/* Review Pages - WOPET Products */}
+          <Route path="/reviews/wopet-w03-wireless-ceramic-fountain-review" element={<WopetW03Review />} />
+          <Route path="/reviews/wopet-w03l-ceramic-fountain-review" element={<WopetW03LReview />} />
+
+          {/* Old Review Pages (Deprecated - keeping for backward compatibility) */}
           <Route path="/reviews/catit-flower-fountain-review" element={<CatitFlowerReview />} />
           <Route path="/reviews/veken-95oz-fountain-review" element={<VekenReview />} />
           <Route path="/reviews/stainless-steel-premium-review" element={<StainlessSteelReview />} />

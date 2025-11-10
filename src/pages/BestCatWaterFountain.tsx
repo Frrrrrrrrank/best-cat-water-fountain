@@ -7,9 +7,10 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Star, CheckCircle2, XCircle } from "lucide-react";
 import catitImage from "@/assets/catit-flower.jpg";
 import stainlessImage from "@/assets/stainless-fountain.jpg";
-import vekenImage from "@/assets/veken-fountain.jpg";
 
 const BestCatWaterFountain = () => {
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -17,52 +18,39 @@ const BestCatWaterFountain = () => {
       {
         "@type": "Product",
         "position": 1,
-        "name": "Catit Flower Fountain",
-        "image": "https://best-cat-water-fountain.com/assets/catit-flower.jpg",
-        "description": "Best overall cat water fountain with 35dB whisper-quiet operation and triple filtration",
+        "name": "WOPET W03 Wireless Ceramic Cat Water Fountain",
+        "image": "https://best-cat-water-fountain.com/wopet-w03.jpg",
+        "description": "Ultra-quiet wireless ceramic cat fountain with 5000mAh battery lasting 30 days",
         "offers": {
           "@type": "Offer",
-          "price": "44.99",
-          "priceCurrency": "USD"
+          "price": "89.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "9.2",
-          "bestRating": "10"
+          "ratingValue": "4.9",
+          "reviewCount": "52",
+          "bestRating": "5"
         }
       },
       {
         "@type": "Product",
         "position": 2,
-        "name": "Stainless Steel Premium Fountain",
-        "image": "https://best-cat-water-fountain.com/assets/stainless-fountain.jpg",
-        "description": "Premium 304 stainless steel fountain with UV-C sterilization",
+        "name": "WOPET W03L Ceramic Cat Water Fountain",
+        "image": "https://best-cat-water-fountain.com/wopet-w03l.jpg",
+        "description": "Premium ceramic cat fountain with ultra-quiet operation and dishwasher-safe design",
         "offers": {
           "@type": "Offer",
-          "price": "54.99",
-          "priceCurrency": "USD"
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "8.9",
-          "bestRating": "10"
-        }
-      },
-      {
-        "@type": "Product",
-        "position": 3,
-        "name": "Veken 95oz Pet Fountain",
-        "image": "https://best-cat-water-fountain.com/assets/veken-fountain.jpg",
-        "description": "Best value fountain with large capacity and LED indicator",
-        "offers": {
-          "@type": "Offer",
-          "price": "24.99",
-          "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "8.5",
-          "bestRating": "10"
+          "ratingValue": "4.7",
+          "reviewCount": "16",
+          "bestRating": "5"
         }
       }
     ]
@@ -71,81 +59,59 @@ const BestCatWaterFountain = () => {
   const topPicks = [
     {
       rank: 1,
-      name: "Catit Flower Fountain",
-      image: catitImage,
-      rating: 9.2,
-      badge: "Best Overall",
+      name: "WOPET W03 Wireless Ceramic Fountain",
+      image: catitImage, // TODO: Replace with real WOPET W03 image
+      rating: 4.9,
+      badge: "Editor's Choice",
       badgeColor: "bg-badge-best",
-      bestFor: "Easy cleaning & quiet operation",
-      material: "BPA-Free Plastic",
-      capacity: "100oz (3L)",
-      noise: "Very Quiet",
-      price: "$29.99",
+      bestFor: "Ultra quiet & wireless convenience",
+      material: "Premium Ceramic",
+      capacity: "101oz (3L)",
+      noise: "< 25dB (Quietest)",
+      price: "$89.99",
       pros: [
-        "Three water flow settings for picky cats",
-        "Extremely easy to disassemble and clean",
-        "Very quiet motor, bedroom-friendly",
-        "Dishwasher safe (except motor)",
-        "Affordable replacement filters",
+        "Quietest fountain we've tested - under 25dB",
+        "5000mAh battery lasts up to 30 days",
+        "Wireless design - place anywhere",
+        "Premium ceramic - dishwasher safe",
+        "Auto-shutoff with LED water level indicator",
       ],
       cons: [
-        "Plastic material (not as durable as stainless)",
-        "Needs cleaning every 2 weeks with multiple cats",
-        "No smart features or indicators",
+        "Higher price point at $89.99",
+        "Ceramic is heavier than plastic",
+        "Requires monthly battery charging",
+        "Only 3L capacity (not ideal for 3+ cats)",
       ],
-      affiliate: "https://www.amazon.com",
+      affiliate: affiliateLink,
+      reviewLink: "/reviews/wopet-w03-wireless-ceramic-fountain-review",
     },
     {
       rank: 2,
-      name: "Stainless Steel Premium Fountain",
-      image: stainlessImage,
-      rating: 8.9,
-      badge: "Best Quality",
-      badgeColor: "bg-badge-premium",
-      bestFor: "Health-conscious owners & durability",
-      material: "304 Stainless Steel",
-      capacity: "81oz (2.4L)",
-      noise: "Whisper Quiet",
-      price: "$54.99",
-      pros: [
-        "100% stainless steel - no plastic parts",
-        "UV-C sterilization kills 99.9% bacteria",
-        "Completely dishwasher safe",
-        "Premium build quality, lasts years",
-        "No bacterial buildup or odors",
-      ],
-      cons: [
-        "Higher upfront cost",
-        "Heavier than plastic alternatives",
-        "Shows water spots if not dried properly",
-      ],
-      affiliate: "https://www.amazon.com",
-    },
-    {
-      rank: 3,
-      name: "Veken 95oz Pet Fountain",
-      image: vekenImage,
-      rating: 8.5,
+      name: "WOPET W03L Ceramic Fountain",
+      image: stainlessImage, // TODO: Replace with real WOPET W03L image
+      rating: 4.7,
       badge: "Best Value",
       badgeColor: "bg-badge-value",
-      bestFor: "Budget-conscious & multiple cats",
-      material: "BPA-Free Plastic",
-      capacity: "95oz (2.8L)",
-      noise: "Quiet",
-      price: "$24.99",
+      bestFor: "Premium quality on budget",
+      material: "Premium Ceramic",
+      capacity: "101oz (3L)",
+      noise: "Ultra Quiet",
+      price: "$59.99",
       pros: [
-        "Extra large capacity for multiple cats",
-        "Includes 3 replacement filters",
-        "LED light indicator for low water",
-        "Excellent value for money",
-        "Easy to refill with large opening",
+        "Premium ceramic at budget price",
+        "Ultra-quiet pump - bedroom safe",
+        "Dishwasher safe ceramic construction",
+        "Always-on AC power - no charging needed",
+        "Multi-layer filtration system",
       ],
       cons: [
-        "Pump can be slightly louder than premium models",
-        "More parts to clean",
-        "Plastic quality not as premium",
+        "Requires nearby power outlet",
+        "Power cable may be visible",
+        "Some components contain plastic",
+        "3L capacity limits multi-cat use",
       ],
-      affiliate: "https://www.amazon.com",
+      affiliate: affiliateLink,
+      reviewLink: "/reviews/wopet-w03l-ceramic-fountain-review",
     },
   ];
 
@@ -299,13 +265,15 @@ const BestCatWaterFountain = () => {
                         <div className="flex flex-wrap gap-3 pt-4 border-t border-border">
                           <a href={product.affiliate} target="_blank" rel="sponsored nofollow" className="flex-1 min-w-[200px]">
                             <Button className="w-full" size="lg">
-                              Check Price on Amazon
+                              Check Price on WOPET
                               <ExternalLink className="ml-2 h-4 w-4" />
                             </Button>
                           </a>
-                          <Button variant="outline" size="lg">
-                            Full Review
-                          </Button>
+                          <a href={product.reviewLink} className="flex-1 min-w-[150px]">
+                            <Button variant="outline" size="lg" className="w-full">
+                              Full Review
+                            </Button>
+                          </a>
                         </div>
                       </div>
                     </div>

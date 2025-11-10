@@ -111,26 +111,41 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Product Reviews - Medium-High Priority (Affiliate Money Pages) -->
+  <!-- Product Reviews - WOPET (Affiliate Money Pages) -->
+  <url>
+    <loc>https://best-cat-water-fountain.com/reviews/wopet-w03-wireless-ceramic-fountain-review</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://best-cat-water-fountain.com/reviews/wopet-w03l-ceramic-fountain-review</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Old Product Reviews (Deprecated - Lower Priority) -->
   <url>
     <loc>https://best-cat-water-fountain.com/reviews/catit-flower-fountain-review</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://best-cat-water-fountain.com/reviews/veken-95oz-fountain-review</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://best-cat-water-fountain.com/reviews/stainless-steel-premium-review</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <!-- Comparison Pages - Medium Priority -->

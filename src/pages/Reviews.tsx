@@ -10,39 +10,32 @@ import vekenImage from "@/assets/veken-fountain.jpg";
 import stainlessImage from "@/assets/stainless-fountain.jpg";
 
 const Reviews = () => {
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const reviews = [
     {
-      title: "Catit Flower Fountain Review",
-      description: "The quietest fountain we've tested at 35dB. Perfect for bedrooms and noise-sensitive cats. Our #1 budget pick.",
-      href: "/reviews/catit-flower-fountain-review",
-      image: catitImage,
-      rating: 4.8,
-      price: "$44.99",
-      pros: ["Quietest at 35dB", "Easy to clean", "Affordable"],
-      featured: true,
-      badge: "Best Budget"
-    },
-    {
-      title: "Veken 95oz Fountain Review",
-      description: "Large capacity fountain perfect for multi-cat homes. Transparent design lets you monitor water level easily.",
-      href: "/reviews/veken-95oz-fountain-review",
-      image: vekenImage,
-      rating: 4.6,
-      price: "$35.99",
-      pros: ["Large 95oz capacity", "Multiple flow modes", "Great value"],
-      featured: true,
-      badge: "Multi-Cat"
-    },
-    {
-      title: "Stainless Steel Premium Fountain Review",
-      description: "Premium stainless steel construction with UV sterilization. Most hygienic option for health-conscious owners.",
-      href: "/reviews/stainless-steel-premium-review",
-      image: stainlessImage,
+      title: "WOPET W03 Wireless Ceramic Fountain Review",
+      description: "The quietest wireless fountain we've tested. Under 25dB operation, 30-day battery life, and premium ceramic construction.",
+      href: "/reviews/wopet-w03-wireless-ceramic-fountain-review",
+      image: catitImage, // TODO: Replace with real WOPET W03 image
       rating: 4.9,
-      price: "$54.99",
-      pros: ["304 stainless steel", "UV sterilization", "Lasts 5+ years"],
+      price: "$89.99",
+      pros: ["< 25dB Ultra Quiet", "30-Day Battery Life", "Premium Ceramic"],
       featured: true,
-      badge: "Premium"
+      badge: "Editor's Choice",
+      affiliateLink: affiliateLink
+    },
+    {
+      title: "WOPET W03L Ceramic Fountain Review",
+      description: "Premium ceramic fountain at budget price. Ultra-quiet pump, dishwasher safe, perfect for 1-2 cats.",
+      href: "/reviews/wopet-w03l-ceramic-fountain-review",
+      image: stainlessImage, // TODO: Replace with real WOPET W03L image
+      rating: 4.7,
+      price: "$59.99",
+      pros: ["Budget-friendly ceramic", "Ultra quiet pump", "Dishwasher safe"],
+      featured: true,
+      badge: "Best Value",
+      affiliateLink: affiliateLink
     }
   ];
 
@@ -201,7 +194,7 @@ const Reviews = () => {
                               </a>
                             </Button>
                             <Button variant="outline" asChild>
-                              <a href="#">Check Price</a>
+                              <a href={review.affiliateLink} target="_blank" rel="noopener noreferrer sponsored">Check Price</a>
                             </Button>
                           </div>
                         </div>
