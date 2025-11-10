@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Star, CheckCircle, XCircle, ArrowRight, Droplets, Battery, Volume2, Sparkles } from "lucide-react";
 
 const WopetW03Review = () => {
-  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+  const affiliateLink = "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh";
 
   const specs = [
     { label: "Capacity", value: "3L (101oz)" },

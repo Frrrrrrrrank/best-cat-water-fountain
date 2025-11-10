@@ -9,8 +9,6 @@ import wopetW03Image from "@/assets/wopet-w03-main.webp";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const CeramicFountains = () => {
-  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
-
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -26,7 +24,7 @@ const CeramicFountains = () => {
           "@type": "Offer",
           "price": "89.99",
           "priceCurrency": "USD",
-          "url": affiliateLink
+          "url": "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -43,7 +41,7 @@ const CeramicFountains = () => {
           "@type": "Offer",
           "price": "59.99",
           "priceCurrency": "USD",
-          "url": affiliateLink
+          "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
         },
         "aggregateRating": {
           "@type": "AggregateRating",

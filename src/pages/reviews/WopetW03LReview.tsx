@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Star, CheckCircle, XCircle, ArrowRight, Droplets, Zap, Volume2, Sparkles } from "lucide-react";
 
 const WopetW03LReview = () => {
-  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+  const affiliateLink = "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh";
 
   const specs = [
     { label: "Capacity", value: "3L (101oz)" },

@@ -8,8 +8,6 @@ import { ExternalLink, DollarSign, TrendingDown } from "lucide-react";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const BudgetFountains = () => {
-  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
-
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -25,7 +23,7 @@ const BudgetFountains = () => {
           "@type": "Offer",
           "price": "59.99",
           "priceCurrency": "USD",
-          "url": affiliateLink
+          "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
         },
         "aggregateRating": {
           "@type": "AggregateRating",

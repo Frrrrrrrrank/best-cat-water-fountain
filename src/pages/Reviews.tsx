@@ -9,8 +9,6 @@ import wopetW03Image from "@/assets/wopet-w03-main.webp";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const Reviews = () => {
-  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
-
   const reviews = [
     {
       title: "WOPET W03 Wireless Ceramic Fountain Review",
@@ -22,7 +20,7 @@ const Reviews = () => {
       pros: ["< 25dB Ultra Quiet", "30-Day Battery Life", "Premium Ceramic"],
       featured: true,
       badge: "Editor's Choice",
-      affiliateLink: affiliateLink
+      affiliateLink: "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh"
     },
     {
       title: "WOPET W03L Ceramic Fountain Review",
@@ -34,7 +32,7 @@ const Reviews = () => {
       pros: ["Budget-friendly ceramic", "Ultra quiet pump", "Dishwasher safe"],
       featured: true,
       badge: "Best Value",
-      affiliateLink: affiliateLink
+      affiliateLink: "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
     }
   ];
 
