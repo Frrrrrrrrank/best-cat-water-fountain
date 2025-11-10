@@ -20,13 +20,20 @@ const MultiCatFountains = () => {
         "position": 1,
         "name": "WOPET W03 Wireless Ceramic Fountain",
         "description": "Premium 101oz ceramic fountain for 2-3 cats - Ultra quiet wireless design",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/wopet-w03-main.webp",
+          "https://wopet.com/cdn/shop/files/1_1d5f3a80-af82-48f2-ba36-cea862e44532.jpg"
+        ],
+        "brand": {"@type": "Brand", "name": "WOPET"},
         "offers": {
           "@type": "Offer",
           "price": "89.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
-          "url": "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh"
+          "url": "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -39,13 +46,20 @@ const MultiCatFountains = () => {
         "position": 2,
         "name": "WOPET W03L Ceramic Fountain",
         "description": "Budget-friendly 101oz ceramic for 2-3 cats - Ultra quiet with always-on power",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/wopet-w03l-main.jpg",
+          "https://wopet.com/cdn/shop/files/1_8a14b51d-9c8f-40e5-bef0-c73fb4d44e2b.jpg"
+        ],
+        "brand": {"@type": "Brand", "name": "WOPET"},
         "offers": {
           "@type": "Offer",
           "price": "59.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
-          "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
+          "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
         },
         "aggregateRating": {
           "@type": "AggregateRating",

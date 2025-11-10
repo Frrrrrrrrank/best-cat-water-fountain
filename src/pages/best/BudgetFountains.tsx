@@ -19,13 +19,20 @@ const BudgetFountains = () => {
         "position": 1,
         "name": "WOPET W03L Ceramic Fountain",
         "description": "Best value ceramic fountain at $59.99 - Premium quality without premium price",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/wopet-w03l-main.jpg",
+          "https://wopet.com/cdn/shop/files/1_8a14b51d-9c8f-40e5-bef0-c73fb4d44e2b.jpg"
+        ],
+        "brand": {"@type": "Brand", "name": "WOPET"},
         "offers": {
           "@type": "Offer",
           "price": "59.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
-          "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
+          "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
         },
         "aggregateRating": {
           "@type": "AggregateRating",

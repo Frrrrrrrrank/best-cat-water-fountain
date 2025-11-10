@@ -57,7 +57,10 @@ const WopetW03LReview = () => {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "WOPET W03L Ceramic Cat Water Fountain",
-            "image": "https://best-cat-water-fountain.com/wopet-w03l-fountain.jpg",
+            "image": [
+              "https://best-cat-water-fountain.com/assets/wopet-w03l-main.jpg",
+              "https://wopet.com/cdn/shop/files/1_8a14b51d-9c8f-40e5-bef0-c73fb4d44e2b.jpg"
+            ],
             "description": "Ceramic cat water fountain with power cable, ultra-quiet operation, premium ceramic construction, and dishwasher-safe design.",
             "brand": {
               "@type": "Brand",
@@ -69,7 +72,41 @@ const WopetW03LReview = () => {
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
               "priceValidUntil": "2025-12-31",
-              "url": affiliateLink
+              "url": affiliateLink,
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 1,
+                    "maxValue": 2,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 3,
+                    "maxValue": 7,
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 30,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/FreeReturn"
+              }
             },
             "aggregateRating": {
               "@type": "AggregateRating",
