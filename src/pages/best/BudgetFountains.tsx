@@ -23,6 +23,8 @@ const BudgetFountains = () => {
           "@type": "Offer",
           "price": "59.99",
           "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
           "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
         },
         "aggregateRating": {

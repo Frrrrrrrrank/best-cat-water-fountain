@@ -23,6 +23,8 @@ const BestCatWaterFountain = () => {
           "@type": "Offer",
           "price": "89.99",
           "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
           "url": "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh"
         },
         "aggregateRating": {
@@ -42,6 +44,8 @@ const BestCatWaterFountain = () => {
           "@type": "Offer",
           "price": "59.99",
           "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
           "url": "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
         },
         "aggregateRating": {

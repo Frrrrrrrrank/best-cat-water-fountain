@@ -68,6 +68,7 @@ const WopetW03LReview = () => {
               "price": "59.99",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2025-12-31",
               "url": affiliateLink
             },
             "aggregateRating": {
