@@ -204,10 +204,10 @@ const Guides = () => {
                   <a href="/best/best-quiet-cat-water-fountain" className="group">
                     <div className="bg-gradient-card border border-border rounded-xl p-6 hover:shadow-lg transition-all">
                       <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                        Quietest Fountains Under 40dB
+                        Quietest Fountains Under 25dB
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Bedroom-safe models tested
+                        Whisper-quiet models like WOPET W03
                       </p>
                     </div>
                   </a>

@@ -5,24 +5,32 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, DollarSign, TrendingDown } from "lucide-react";
-import vekenImage from "@/assets/veken-fountain.jpg";
+import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const BudgetFountains = () => {
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Best Budget Cat Water Fountains Under $50",
+    "name": "Best Budget Cat Water Fountains Under $75",
     "description": "Top affordable cat water fountains with the best value for money in 2025",
     "itemListElement": [
       {
         "@type": "Product",
         "position": 1,
-        "name": "Veken Pet Fountain",
-        "description": "Best value under $30 with 84oz capacity",
+        "name": "WOPET W03L Ceramic Fountain",
+        "description": "Best value ceramic fountain at $59.99 - Premium quality without premium price",
         "offers": {
           "@type": "Offer",
-          "price": "25.99",
-          "priceCurrency": "USD"
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "16"
         }
       }
     ]

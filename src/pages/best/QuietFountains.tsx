@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Star, Volume2 } from "lucide-react";
-import catitImage from "@/assets/catit-flower.jpg";
-import stainlessImage from "@/assets/stainless-fountain.jpg";
+import wopetW03Image from "@/assets/wopet-w03-main.webp";
+import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const QuietFountains = () => {
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -18,14 +20,36 @@ const QuietFountains = () => {
       {
         "@type": "Product",
         "position": 1,
-        "name": "Catit Flower Fountain",
-        "description": "Quietest fountain at 35dB - bedroom-safe operation"
+        "name": "WOPET W03 Wireless Ceramic Fountain",
+        "description": "Quietest fountain we've tested at under 25dB - virtually silent wireless operation",
+        "offers": {
+          "@type": "Offer",
+          "price": "89.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "52"
+        }
       },
       {
         "@type": "Product",
         "position": 2,
-        "name": "Stainless Steel Premium Fountain",
-        "description": "Premium quiet fountain at 38dB with UV sterilization"
+        "name": "WOPET W03L Ceramic Fountain",
+        "description": "Ultra-quiet ceramic fountain with premium pump - bedroom safe at budget price",
+        "offers": {
+          "@type": "Offer",
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "16"
+        }
       }
     ]
   };

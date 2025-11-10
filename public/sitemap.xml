@@ -126,28 +126,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Old Product Reviews (Deprecated - Lower Priority) -->
-  <url>
-    <loc>https://best-cat-water-fountain.com/reviews/catit-flower-fountain-review</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://best-cat-water-fountain.com/reviews/veken-95oz-fountain-review</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://best-cat-water-fountain.com/reviews/stainless-steel-premium-review</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <!-- Comparison Pages - Medium Priority -->
   <url>
     <loc>https://best-cat-water-fountain.com/compare/catit-flower-vs-veken-95oz</loc>

@@ -262,7 +262,7 @@ const PlasticVsStainlessVsCeramic = () => {
                       <ul className="space-y-2 text-muted-foreground text-sm">
                         <li>• <strong>Beautiful designs:</strong> Looks like home decor</li>
                         <li>• <strong>Hygienic surface:</strong> Non-porous like stainless</li>
-                        <li>• <strong>Naturally quiet:</strong> Mass dampens vibration</li>
+                        <li>• <strong>Naturally quiet:</strong> Mass dampens vibration (WOPET W03 under 25dB)</li>
                         <li>• <strong>Keeps water cooler:</strong> Thermal properties of clay</li>
                         <li>• <strong>No plastic concerns:</strong> Food-safe glazes</li>
                         <li>• <strong>Prevents chin acne:</strong> Clean, non-porous surface</li>
@@ -285,7 +285,7 @@ const PlasticVsStainlessVsCeramic = () => {
                   </div>
                   <div className="mt-6 p-4 bg-primary/10 rounded-lg">
                     <p className="text-sm text-foreground">
-                      <strong>Best for:</strong> Single-cat homes, design-conscious owners, cats who prefer cool water, quiet bedrooms. Not recommended for playful cats or multi-cat chaos.
+                      <strong>Best for:</strong> Single-cat homes, design-conscious owners, cats who prefer cool water, quiet bedrooms. Not recommended for playful cats or multi-cat chaos. The WOPET W03 series offers premium ceramic construction with exceptional quietness.
                     </p>
                   </div>
                   <div className="mt-4">

@@ -301,7 +301,7 @@ const WhyCatsNeedFountains = () => {
                   <div className="bg-gradient-card border border-border rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Quiet Models</h3>
                     <p className="text-sm text-muted-foreground mb-4">
-                      Under 40dB for bedroom use
+                      Under 25dB - whisper-quiet ceramic options like WOPET W03
                     </p>
                     <Button variant="outline" size="sm" asChild>
                       <a href="/best/best-quiet-cat-water-fountain">See Quiet Fountains →</a>

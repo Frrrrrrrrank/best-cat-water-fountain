@@ -12,11 +12,6 @@ import NotFound from "./pages/NotFound";
 import WopetW03Review from "./pages/reviews/WopetW03Review";
 import WopetW03LReview from "./pages/reviews/WopetW03LReview";
 
-// Old Review Pages (Deprecated)
-import CatitFlowerReview from "./pages/reviews/CatitFlowerReview";
-import VekenReview from "./pages/reviews/VekenReview";
-import StainlessSteelReview from "./pages/reviews/StainlessSteelReview";
-
 // Comparison Pages
 import CatitVsVeken from "./pages/compare/CatitVsVeken";
 
@@ -63,11 +58,6 @@ const App = () => (
           <Route path="/reviews/wopet-w03-wireless-ceramic-fountain-review" element={<WopetW03Review />} />
           <Route path="/reviews/wopet-w03l-ceramic-fountain-review" element={<WopetW03LReview />} />
 
-          {/* Old Review Pages (Deprecated - keeping for backward compatibility) */}
-          <Route path="/reviews/catit-flower-fountain-review" element={<CatitFlowerReview />} />
-          <Route path="/reviews/veken-95oz-fountain-review" element={<VekenReview />} />
-          <Route path="/reviews/stainless-steel-premium-review" element={<StainlessSteelReview />} />
-          
           {/* Comparison Pages */}
           <Route path="/compare/catit-flower-vs-veken-95oz" element={<CatitVsVeken />} />
           

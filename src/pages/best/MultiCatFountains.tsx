@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Users, Droplets } from "lucide-react";
-import stainlessImage from "@/assets/stainless-fountain.jpg";
-import vekenImage from "@/assets/veken-fountain.jpg";
+import wopetW03Image from "@/assets/wopet-w03-main.webp";
+import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const MultiCatFountains = () => {
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -18,14 +20,36 @@ const MultiCatFountains = () => {
       {
         "@type": "Product",
         "position": 1,
-        "name": "Stainless Steel Premium Fountain",
-        "description": "Best for 2-3 cats with 128oz capacity and ultra-durable construction"
+        "name": "WOPET W03 Wireless Ceramic Fountain",
+        "description": "Premium 101oz ceramic fountain for 2-3 cats - Ultra quiet wireless design",
+        "offers": {
+          "@type": "Offer",
+          "price": "89.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "52"
+        }
       },
       {
         "@type": "Product",
         "position": 2,
-        "name": "Veken 95oz Pet Fountain",
-        "description": "Budget-friendly large capacity with LED water level indicator"
+        "name": "WOPET W03L Ceramic Fountain",
+        "description": "Budget-friendly 101oz ceramic for 2-3 cats - Ultra quiet with always-on power",
+        "offers": {
+          "@type": "Offer",
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "16"
+        }
       }
     ]
   };

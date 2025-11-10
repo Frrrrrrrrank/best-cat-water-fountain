@@ -179,6 +179,16 @@ const HowOftenChangeFilter = () => {
                     </thead>
                     <tbody className="divide-y divide-border">
                       <tr>
+                        <td className="p-4 text-foreground">WOPET W03 Wireless</td>
+                        <td className="p-4 text-muted-foreground">Every 3-4 weeks</td>
+                        <td className="p-4 text-muted-foreground">3-4 weeks (ceramic stays cleaner)</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 text-foreground">WOPET W03L Ceramic</td>
+                        <td className="p-4 text-muted-foreground">Every 3-4 weeks</td>
+                        <td className="p-4 text-muted-foreground">3-4 weeks (ceramic stays cleaner)</td>
+                      </tr>
+                      <tr>
                         <td className="p-4 text-foreground">Catit Flower</td>
                         <td className="p-4 text-muted-foreground">Every 30 days</td>
                         <td className="p-4 text-muted-foreground">2-4 weeks (depends on cats)</td>
@@ -187,11 +197,6 @@ const HowOftenChangeFilter = () => {
                         <td className="p-4 text-foreground">PetSafe Drinkwell</td>
                         <td className="p-4 text-muted-foreground">Every 2-4 weeks</td>
                         <td className="p-4 text-muted-foreground">2-3 weeks typical</td>
-                      </tr>
-                      <tr>
-                        <td className="p-4 text-foreground">Pioneer Pet Raindrop</td>
-                        <td className="p-4 text-muted-foreground">Every 1 month</td>
-                        <td className="p-4 text-muted-foreground">3-4 weeks</td>
                       </tr>
                       <tr>
                         <td className="p-4 text-foreground">Veken 95oz</td>
