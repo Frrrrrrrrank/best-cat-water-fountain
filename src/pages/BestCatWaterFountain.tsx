@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Star, CheckCircle2, XCircle } from "lucide-react";
-import catitImage from "@/assets/catit-flower.jpg";
-import stainlessImage from "@/assets/stainless-fountain.jpg";
+import wopetW03Image from "@/assets/wopet-w03-main.webp";
+import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const BestCatWaterFountain = () => {
   const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
@@ -19,7 +19,7 @@ const BestCatWaterFountain = () => {
         "@type": "Product",
         "position": 1,
         "name": "WOPET W03 Wireless Ceramic Cat Water Fountain",
-        "image": "https://best-cat-water-fountain.com/wopet-w03.jpg",
+        "image": "https://best-cat-water-fountain.com/assets/wopet-w03-main.webp",
         "description": "Ultra-quiet wireless ceramic cat fountain with 5000mAh battery lasting 30 days",
         "offers": {
           "@type": "Offer",
@@ -38,7 +38,7 @@ const BestCatWaterFountain = () => {
         "@type": "Product",
         "position": 2,
         "name": "WOPET W03L Ceramic Cat Water Fountain",
-        "image": "https://best-cat-water-fountain.com/wopet-w03l.jpg",
+        "image": "https://best-cat-water-fountain.com/assets/wopet-w03l-main.jpg",
         "description": "Premium ceramic cat fountain with ultra-quiet operation and dishwasher-safe design",
         "offers": {
           "@type": "Offer",
@@ -60,7 +60,7 @@ const BestCatWaterFountain = () => {
     {
       rank: 1,
       name: "WOPET W03 Wireless Ceramic Fountain",
-      image: catitImage, // TODO: Replace with real WOPET W03 image
+      image: wopetW03Image,
       rating: 4.9,
       badge: "Editor's Choice",
       badgeColor: "bg-badge-best",
@@ -88,7 +88,7 @@ const BestCatWaterFountain = () => {
     {
       rank: 2,
       name: "WOPET W03L Ceramic Fountain",
-      image: stainlessImage, // TODO: Replace with real WOPET W03L image
+      image: wopetW03LImage,
       rating: 4.7,
       badge: "Best Value",
       badgeColor: "bg-badge-value",

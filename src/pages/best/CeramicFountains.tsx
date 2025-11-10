@@ -5,9 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Sparkles, Award } from "lucide-react";
-import catitImage from "@/assets/catit-flower.jpg";
+import wopetW03Image from "@/assets/wopet-w03-main.webp";
+import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const CeramicFountains = () => {
+  const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -17,12 +20,35 @@ const CeramicFountains = () => {
       {
         "@type": "Product",
         "position": 1,
-        "name": "Catit Flower Fountain",
-        "description": "Premium ceramic fountain with flower petal design",
+        "name": "WOPET W03 Wireless Ceramic Fountain",
+        "description": "Premium wireless ceramic fountain with ultra-quiet 25dB operation and 30-day battery",
         "offers": {
           "@type": "Offer",
-          "price": "42.99",
-          "priceCurrency": "USD"
+          "price": "89.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "52"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "WOPET W03L Ceramic Fountain",
+        "description": "Budget-friendly ceramic fountain with ultra-quiet pump and dishwasher-safe design",
+        "offers": {
+          "@type": "Offer",
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "url": affiliateLink
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "16"
         }
       }
     ]

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star } from "lucide-react";
-import catitImage from "@/assets/catit-flower.jpg";
-import stainlessImage from "@/assets/stainless-fountain.jpg";
+import wopetW03Image from "@/assets/wopet-w03-main.webp";
+import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
 
 const FeaturedPicks = () => {
   const affiliateLink = "https://wopet.com/?ref=foeyvtfh";
@@ -12,7 +12,7 @@ const FeaturedPicks = () => {
     {
       id: 1,
       name: "WOPET W03 Wireless Ceramic Fountain",
-      image: catitImage, // TODO: Replace with real WOPET W03 image
+      image: wopetW03Image,
       badge: "Editor's Choice",
       badgeColor: "bg-badge-best",
       rating: 4.9,
@@ -25,7 +25,7 @@ const FeaturedPicks = () => {
     {
       id: 2,
       name: "WOPET W03L Ceramic Fountain",
-      image: stainlessImage, // TODO: Replace with real WOPET W03L image
+      image: wopetW03LImage,
       badge: "Best Value",
       badgeColor: "bg-badge-value",
       rating: 4.7,
