@@ -4,8 +4,10 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, DollarSign, TrendingDown } from "lucide-react";
+import { ExternalLink, DollarSign, TrendingDown, Star } from "lucide-react";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
+import pawaiiWirelessStandardImage from "@/assets/pawaii-wireless-standard.png";
+import pawaiiProWhiteImage from "@/assets/pawaii-pro-white.jpg";
 
 const BudgetFountains = () => {
   const structuredData = {
@@ -38,6 +40,58 @@ const BudgetFountains = () => {
           "@type": "AggregateRating",
           "ratingValue": "4.7",
           "reviewCount": "16"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "PAWAii Water Fountain Pro",
+        "description": "Mid-range wireless fountain at $49.99 - wireless convenience without premium pricing",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/pawaii-pro-white.jpg",
+          "https://www.pawaii.com/cdn/shop/files/pw-product-wireless-pet-water-fountain-pro-white-img2.jpg"
+        ],
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "49.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "38"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "PAWAii Wireless Pet Water Fountain",
+        "description": "Best budget wireless fountain at only $39.99 - unbeatable value for wireless convenience",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/pawaii-wireless-standard.png",
+          "https://www.pawaii.com/cdn/shop/products/PAWAii-Wireless-Pet-Water-Fountain-img1.png"
+        ],
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "39.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "35"
         }
       }
     ]
@@ -191,74 +245,214 @@ const BudgetFountains = () => {
           <section className="py-16 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-8">Best Budget Fountain</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-8">Top Budget Fountains</h2>
 
-                <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
-                  <div className="grid md:grid-cols-3 gap-6 p-6">
-                    <div className="relative">
-                      <img
-                        src={vekenImage}
-                        alt="Veken Pet Fountain budget cat water fountain with 84oz capacity and triple filtration"
-                        className="w-full rounded-xl"
-                        loading="eager"
-                      />
-                      <div className="absolute top-3 left-3">
-                        <Badge className="bg-badge-premium text-white border-0">
-                          #1 Budget Pick
-                        </Badge>
-                      </div>
-                      <div className="absolute top-3 right-3 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                        <span className="font-bold text-foreground">8.7/10</span>
-                      </div>
-                    </div>
-
-                    <div className="md:col-span-2">
-                      <h3 className="text-2xl font-bold text-foreground mb-2">
-                        Veken Pet Fountain
-                      </h3>
-                      <p className="text-muted-foreground mb-4">
-                        Best value under $30. Features 84oz capacity (same as $70 models), triple filtration system, and ultra-quiet pump. In our 6-month test, it matched premium fountains in reliability while costing 65% less. Cats showed identical drinking frequency vs premium alternatives.
-                      </p>
-
-                      <div className="grid grid-cols-2 gap-4 mb-4">
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Capacity</p>
-                          <p className="text-sm font-medium text-foreground">84oz / 2.5L</p>
+                <div className="space-y-8">
+                  {/* PAWAii Wireless - Best Budget Wireless */}
+                  <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
+                    <div className="grid md:grid-cols-3 gap-6 p-6">
+                      <div className="relative">
+                        <img
+                          src={pawaiiWirelessStandardImage}
+                          alt="PAWAii Wireless Pet Water Fountain - Best budget wireless at $39.99"
+                          className="w-full rounded-xl"
+                          loading="eager"
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-badge-value text-white border-0">
+                            #1 Budget Wireless
+                          </Badge>
                         </div>
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Filter Cost</p>
-                          <p className="text-sm font-medium text-foreground">$1.50/month</p>
-                        </div>
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
-                          <p className="text-sm font-medium text-foreground">35dB (Very Quiet)</p>
-                        </div>
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Price</p>
-                          <p className="text-lg font-bold text-primary">$25.99</p>
+                        <div className="absolute top-3 right-3 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-1.5 flex items-center gap-1.5">
+                          <Star className="h-4 w-4 fill-primary text-primary" />
+                          <span className="font-bold text-foreground">4.5</span>
                         </div>
                       </div>
 
-                      <div className="bg-success/10 rounded-lg p-4 mb-4">
-                        <p className="text-sm text-foreground">
-                          <strong>Value Test Result:</strong> After 180 days of testing, the Veken maintained 98% functionality vs day 1. Total cost including filters: $0.19/day. Premium fountains averaged $0.31/day with no measurable hydration improvement.
+                      <div className="md:col-span-2">
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          PAWAii Wireless Pet Water Fountain
+                        </h3>
+                        <p className="text-muted-foreground mb-4">
+                          Best wireless fountain under $40! At just $39.99, this is the most affordable true wireless fountain on the market. Lightweight design, rechargeable battery, and quiet operation make it perfect for budget-conscious cat owners who still want cord-free convenience.
                         </p>
-                      </div>
 
-                      <div className="flex flex-wrap gap-3">
-                        <a href="#" rel="sponsored nofollow" className="flex-1 min-w-[200px]">
-                          <Button className="w-full">
-                            Check Price on Amazon
-                            <ExternalLink className="ml-2 h-4 w-4" />
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Capacity</p>
+                            <p className="text-sm font-medium text-foreground">68oz / 2L</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Material</p>
+                            <p className="text-sm font-medium text-foreground">BPA-Free Plastic</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
+                            <p className="text-sm font-medium text-foreground">32-35dB</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Price</p>
+                            <p className="text-lg font-bold text-primary">$39.99</p>
+                          </div>
+                        </div>
+
+                        <div className="bg-success/10 rounded-lg p-4 mb-4">
+                          <p className="text-sm text-foreground">
+                            <strong>Value Test Result:</strong> Battery lasts 10-12 days on a single charge. Wireless design means you can place it anywhere without outlet constraints. Perfect for 1-2 cats at an unbeatable price point.
+                          </p>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3">
+                          <a href="https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro" target="_blank" rel="nofollow sponsored" className="flex-1 min-w-[200px]">
+                            <Button className="w-full">
+                              Check Price on PAWAii
+                              <ExternalLink className="ml-2 h-4 w-4" />
+                            </Button>
+                          </a>
+                          <Button variant="outline" asChild>
+                            <a href="/reviews/pawaii-wireless-fountain-review">Full Review</a>
                           </Button>
-                        </a>
-                        <Button variant="outline" asChild>
-                          <a href="/reviews/veken-pet-fountain-review">Full Review</a>
-                        </Button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+
+                  {/* PAWAii Water Fountain Pro */}
+                  <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
+                    <div className="grid md:grid-cols-3 gap-6 p-6">
+                      <div className="relative">
+                        <img
+                          src={pawaiiProWhiteImage}
+                          alt="PAWAii Water Fountain Pro - Mid-range wireless at $49.99"
+                          className="w-full rounded-xl"
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-badge-premium text-white border-0">
+                            #2 Pro Choice
+                          </Badge>
+                        </div>
+                        <div className="absolute top-3 right-3 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-1.5 flex items-center gap-1.5">
+                          <Star className="h-4 w-4 fill-primary text-primary" />
+                          <span className="font-bold text-foreground">4.6</span>
+                        </div>
+                      </div>
+
+                      <div className="md:col-span-2">
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          PAWAii Water Fountain Pro
+                        </h3>
+                        <p className="text-muted-foreground mb-4">
+                          Excellent mid-range wireless fountain at $49.99. Offers smart features and convenience without premium pricing. Easy to clean (5 parts), wireless design, and quiet operation make it a great value choice for 1-2 cats.
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Capacity</p>
+                            <p className="text-sm font-medium text-foreground">84oz / 2.5L</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Material</p>
+                            <p className="text-sm font-medium text-foreground">BPA-Free Plastic</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
+                            <p className="text-sm font-medium text-foreground">30-32dB</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Price</p>
+                            <p className="text-lg font-bold text-primary">$49.99</p>
+                          </div>
+                        </div>
+
+                        <div className="bg-success/10 rounded-lg p-4 mb-4">
+                          <p className="text-sm text-foreground">
+                            <strong>Value Analysis:</strong> At $49.99, you get wireless convenience at 29% less than premium wireless models ($69.99+). Battery lasts 14 days, eliminating cord clutter without breaking the bank.
+                          </p>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3">
+                          <a href="https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro" target="_blank" rel="nofollow sponsored" className="flex-1 min-w-[200px]">
+                            <Button className="w-full">
+                              Check Price on PAWAii
+                              <ExternalLink className="ml-2 h-4 w-4" />
+                            </Button>
+                          </a>
+                          <Button variant="outline" asChild>
+                            <a href="/reviews/pawaii-water-fountain-pro-review">Full Review</a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  {/* WOPET W03L */}
+                  <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
+                    <div className="grid md:grid-cols-3 gap-6 p-6">
+                      <div className="relative">
+                        <img
+                          src={wopetW03LImage}
+                          alt="WOPET W03L Ceramic Fountain - Best value ceramic at $59.99"
+                          className="w-full rounded-xl"
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-badge-value text-white border-0">
+                            #3 Best Ceramic Value
+                          </Badge>
+                        </div>
+                        <div className="absolute top-3 right-3 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-1.5 flex items-center gap-1.5">
+                          <Star className="h-4 w-4 fill-primary text-primary" />
+                          <span className="font-bold text-foreground">4.7</span>
+                        </div>
+                      </div>
+
+                      <div className="md:col-span-2">
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          WOPET W03L Ceramic Fountain
+                        </h3>
+                        <p className="text-muted-foreground mb-4">
+                          Best ceramic fountain under $60! Premium ceramic construction at a budget price point. Ultra-quiet pump, dishwasher safe, and always-on AC power means no charging needed. Perfect for cat owners who want ceramic quality without premium pricing.
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Capacity</p>
+                            <p className="text-sm font-medium text-foreground">101oz / 3L</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Material</p>
+                            <p className="text-sm font-medium text-foreground">Premium Ceramic</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
+                            <p className="text-sm font-medium text-foreground">Ultra Quiet</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Price</p>
+                            <p className="text-lg font-bold text-primary">$59.99</p>
+                          </div>
+                        </div>
+
+                        <div className="bg-success/10 rounded-lg p-4 mb-4">
+                          <p className="text-sm text-foreground">
+                            <strong>Ceramic Advantage:</strong> Premium ceramic at budget price. Dishwasher safe, doesn't retain odors or bacteria like plastic. 3L capacity great for 1-2 cats with less frequent refills.
+                          </p>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3">
+                          <a href="https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh" target="_blank" rel="nofollow sponsored" className="flex-1 min-w-[200px]">
+                            <Button className="w-full">
+                              Check Price on WOPET
+                              <ExternalLink className="ml-2 h-4 w-4" />
+                            </Button>
+                          </a>
+                          <Button variant="outline" asChild>
+                            <a href="/reviews/wopet-w03l-ceramic-fountain-review">Full Review</a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </section>

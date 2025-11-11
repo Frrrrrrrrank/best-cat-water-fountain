@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Star, Volume2 } from "lucide-react";
 import wopetW03Image from "@/assets/wopet-w03-main.webp";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
+import pawaiiWirelessProImage from "@/assets/pawaii-wireless-pro-white.png";
+import pawaiiProWhiteImage from "@/assets/pawaii-pro-white.jpg";
 
 const QuietFountains = () => {
   const structuredData = {
@@ -59,6 +61,52 @@ const QuietFountains = () => {
           "@type": "AggregateRating",
           "ratingValue": "4.7",
           "reviewCount": "16"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "PAWAii Wireless Pet Water Fountain Pro",
+        "image": ["https://best-cat-water-fountain.com/assets/pawaii-wireless-pro-white.png"],
+        "description": "Premium wireless fountain operating under 30dB with smart LED indicators",
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "69.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "42"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 4,
+        "name": "PAWAii Water Fountain Pro",
+        "image": ["https://best-cat-water-fountain.com/assets/pawaii-pro-white.jpg"],
+        "description": "Quiet wireless fountain at 30-32dB - excellent mid-range option",
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "49.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "38"
         }
       }
     ]
@@ -154,13 +202,13 @@ const QuietFountains = () => {
                 <h2 className="text-3xl font-bold text-foreground mb-8">Top Quiet Fountains</h2>
 
                 <div className="space-y-8">
-                  {/* Catit */}
+                  {/* #1 WOPET W03 */}
                   <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
                     <div className="grid md:grid-cols-3 gap-6 p-6">
                       <div className="relative">
                         <img
-                          src={catitImage}
-                          alt="Catit Flower Fountain operating at 35dB in bedroom environment"
+                          src={wopetW03Image}
+                          alt="WOPET W03 Wireless Ceramic Fountain operating under 25dB"
                           className="w-full rounded-xl"
                           loading="eager"
                         />
@@ -170,26 +218,205 @@ const QuietFountains = () => {
                           </Badge>
                         </div>
                         <div className="absolute top-3 right-3 bg-success/90 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                          <span className="font-bold text-white">35dB</span>
+                          <span className="font-bold text-white">&lt;25dB</span>
                         </div>
                       </div>
 
                       <div className="md:col-span-2">
                         <h3 className="text-2xl font-bold text-foreground mb-2">
-                          Catit Flower Fountain
+                          WOPET W03 Wireless Ceramic Fountain
                         </h3>
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="flex items-center gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                            ))}
+                          </div>
+                          <span className="text-sm font-medium text-foreground">4.9</span>
+                          <span className="text-sm text-muted-foreground">(52 reviews)</span>
+                        </div>
                         <p className="text-muted-foreground mb-4">
-                          The quietest fountain we've ever tested. At 35dB, it's literally quieter than a whisper (37dB). Maintained this noise level throughout our 90-day test, even in hard water conditions.
+                          The quietest fountain we've tested. Wireless operation eliminates pump noise entirely—operates under 25dB, quieter than a whisper. Premium ceramic construction and 6400mAh battery.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 mb-4">
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
-                            <p className="text-lg font-bold text-success">35dB</p>
+                            <p className="text-lg font-bold text-success">&lt;25dB</p>
                           </div>
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Capacity</p>
-                            <p className="text-sm font-medium text-foreground">100oz</p>
+                            <p className="text-sm font-medium text-foreground">68oz / 2L</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Material</p>
+                            <p className="text-sm font-medium text-foreground">Ceramic</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Price</p>
+                            <p className="text-lg font-bold text-primary">$89.99</p>
+                          </div>
+                        </div>
+
+                        <div className="mb-4">
+                          <p className="text-sm font-medium text-foreground mb-2">Key Features:</p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>✓ Wireless design - virtually silent operation</li>
+                            <li>✓ Premium ceramic construction</li>
+                            <li>✓ 6400mAh rechargeable battery</li>
+                            <li>✓ LED indicators for battery and water level</li>
+                          </ul>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3">
+                          <a
+                            href="https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh"
+                            target="_blank"
+                            rel="nofollow sponsored"
+                            className="flex-1 min-w-[200px]"
+                          >
+                            <Button className="w-full">
+                              Check Price on WOPET
+                              <ExternalLink className="ml-2 h-4 w-4" />
+                            </Button>
+                          </a>
+                          <Button variant="outline" asChild>
+                            <a href="/reviews/wopet-w03-wireless-ceramic-fountain-review">Full Review</a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  {/* #2 WOPET W03L */}
+                  <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
+                    <div className="grid md:grid-cols-3 gap-6 p-6">
+                      <div className="relative">
+                        <img
+                          src={wopetW03LImage}
+                          alt="WOPET W03L Ceramic Fountain - ultra-quiet budget option"
+                          className="w-full rounded-xl"
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-badge-value text-white border-0">
+                            #2 Best Value
+                          </Badge>
+                        </div>
+                        <div className="absolute top-3 right-3 bg-success/90 backdrop-blur-sm rounded-lg px-3 py-1.5">
+                          <span className="font-bold text-white">~30dB</span>
+                        </div>
+                      </div>
+
+                      <div className="md:col-span-2">
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          WOPET W03L Ceramic Fountain
+                        </h3>
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="flex items-center gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className={`h-4 w-4 ${i < 4 ? 'fill-primary text-primary' : 'text-muted-foreground'}`} />
+                            ))}
+                          </div>
+                          <span className="text-sm font-medium text-foreground">4.7</span>
+                          <span className="text-sm text-muted-foreground">(16 reviews)</span>
+                        </div>
+                        <p className="text-muted-foreground mb-4">
+                          Ultra-quiet ceramic fountain at budget price. Premium pump operates around 30dB—bedroom-safe noise level. Excellent choice for noise-sensitive cats without wireless premium.
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
+                            <p className="text-lg font-bold text-success">~30dB</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Capacity</p>
+                            <p className="text-sm font-medium text-foreground">68oz / 2L</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Material</p>
+                            <p className="text-sm font-medium text-foreground">Ceramic</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Price</p>
+                            <p className="text-lg font-bold text-primary">$59.99</p>
+                          </div>
+                        </div>
+
+                        <div className="mb-4">
+                          <p className="text-sm font-medium text-foreground mb-2">Key Features:</p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>✓ Ultra-quiet pump technology</li>
+                            <li>✓ Premium ceramic construction</li>
+                            <li>✓ Corded design - always on</li>
+                            <li>✓ Easy to clean and maintain</li>
+                          </ul>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3">
+                          <a
+                            href="https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
+                            target="_blank"
+                            rel="nofollow sponsored"
+                            className="flex-1 min-w-[200px]"
+                          >
+                            <Button className="w-full">
+                              Check Price on WOPET
+                              <ExternalLink className="ml-2 h-4 w-4" />
+                            </Button>
+                          </a>
+                          <Button variant="outline" asChild>
+                            <a href="/reviews/wopet-w03l-ceramic-fountain-review">Full Review</a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  {/* #3 PAWAii Wireless Pro */}
+                  <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
+                    <div className="grid md:grid-cols-3 gap-6 p-6">
+                      <div className="relative">
+                        <img
+                          src={pawaiiWirelessProImage}
+                          alt="PAWAii Wireless Pet Water Fountain Pro - premium quiet wireless"
+                          className="w-full rounded-xl"
+                        />
+                        <div className="absolute top-3 left-3">
+                          <Badge className="bg-badge-premium text-white border-0">
+                            #3 Premium Wireless
+                          </Badge>
+                        </div>
+                        <div className="absolute top-3 right-3 bg-success/90 backdrop-blur-sm rounded-lg px-3 py-1.5">
+                          <span className="font-bold text-white">&lt;30dB</span>
+                        </div>
+                      </div>
+
+                      <div className="md:col-span-2">
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          PAWAii Wireless Pet Water Fountain Pro
+                        </h3>
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="flex items-center gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className={`h-4 w-4 ${i < 5 ? 'fill-primary text-primary' : 'text-muted-foreground'}`} />
+                            ))}
+                          </div>
+                          <span className="text-sm font-medium text-foreground">4.8</span>
+                          <span className="text-sm text-muted-foreground">(42 reviews)</span>
+                        </div>
+                        <p className="text-muted-foreground mb-4">
+                          Premium wireless fountain operating under 30dB. Smart LED indicators for battery and water level. Large capacity with modern design and ultra-quiet wireless operation.
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
+                            <p className="text-lg font-bold text-success">&lt;30dB</p>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Capacity</p>
+                            <p className="text-sm font-medium text-foreground">101oz / 3L</p>
                           </div>
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Material</p>
@@ -197,80 +424,119 @@ const QuietFountains = () => {
                           </div>
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Price</p>
-                            <p className="text-lg font-bold text-primary">$44.99</p>
+                            <p className="text-lg font-bold text-primary">$69.99</p>
                           </div>
                         </div>
 
+                        <div className="mb-4">
+                          <p className="text-sm font-medium text-foreground mb-2">Key Features:</p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>✓ Wireless operation - ultra-quiet</li>
+                            <li>✓ Smart LED indicators</li>
+                            <li>✓ Large 101oz capacity</li>
+                            <li>✓ Premium filtration system</li>
+                          </ul>
+                        </div>
+
                         <div className="flex flex-wrap gap-3">
-                          <a href="#" rel="sponsored nofollow" className="flex-1 min-w-[200px]">
+                          <a
+                            href="https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro"
+                            target="_blank"
+                            rel="nofollow sponsored"
+                            className="flex-1 min-w-[200px]"
+                          >
                             <Button className="w-full">
-                              Check Price on Amazon
+                              Check Price on PAWAii
                               <ExternalLink className="ml-2 h-4 w-4" />
                             </Button>
                           </a>
                           <Button variant="outline" asChild>
-                            <a href="/reviews/catit-flower-fountain-review">Full Review</a>
+                            <a href="/reviews/pawaii-wireless-fountain-pro-review">Full Review</a>
                           </Button>
                         </div>
                       </div>
                     </div>
                   </article>
 
-                  {/* Stainless Steel */}
+                  {/* #4 PAWAii Pro */}
                   <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
                     <div className="grid md:grid-cols-3 gap-6 p-6">
                       <div className="relative">
                         <img
-                          src={stainlessImage}
-                          alt="Stainless steel premium fountain with magnetic drive pump at 38dB"
+                          src={pawaiiProWhiteImage}
+                          alt="PAWAii Water Fountain Pro - quiet mid-range option"
                           className="w-full rounded-xl"
                         />
                         <div className="absolute top-3 left-3">
-                          <Badge className="bg-badge-premium text-white border-0">
-                            #2 Premium Quiet
+                          <Badge className="bg-badge-choice text-white border-0">
+                            #4 Mid-Range
                           </Badge>
                         </div>
                         <div className="absolute top-3 right-3 bg-success/90 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                          <span className="font-bold text-white">38dB</span>
+                          <span className="font-bold text-white">30-32dB</span>
                         </div>
                       </div>
 
                       <div className="md:col-span-2">
                         <h3 className="text-2xl font-bold text-foreground mb-2">
-                          Stainless Steel Premium Fountain
+                          PAWAii Water Fountain Pro
                         </h3>
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="flex items-center gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className={`h-4 w-4 ${i < 4 ? 'fill-primary text-primary' : 'text-muted-foreground'}`} />
+                            ))}
+                          </div>
+                          <span className="text-sm font-medium text-foreground">4.6</span>
+                          <span className="text-sm text-muted-foreground">(38 reviews)</span>
+                        </div>
                         <p className="text-muted-foreground mb-4">
-                          Only 3dB louder than Catit but with premium stainless steel construction and UV sterilization. The magnetic drive pump stays whisper-quiet even after months of use.
+                          Quiet wireless fountain at 30-32dB noise level. Excellent mid-range option with good capacity and filtration. Perfect balance of features, quietness, and affordability.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 mb-4">
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Noise Level</p>
-                            <p className="text-lg font-bold text-success">38dB</p>
+                            <p className="text-lg font-bold text-success">30-32dB</p>
                           </div>
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Capacity</p>
-                            <p className="text-sm font-medium text-foreground">81oz</p>
+                            <p className="text-sm font-medium text-foreground">84oz / 2.5L</p>
                           </div>
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Material</p>
-                            <p className="text-sm font-medium text-foreground">304 Stainless</p>
+                            <p className="text-sm font-medium text-foreground">BPA-Free Plastic</p>
                           </div>
                           <div>
                             <p className="text-xs text-muted-foreground mb-1">Price</p>
-                            <p className="text-lg font-bold text-primary">$54.99</p>
+                            <p className="text-lg font-bold text-primary">$49.99</p>
                           </div>
                         </div>
 
+                        <div className="mb-4">
+                          <p className="text-sm font-medium text-foreground mb-2">Key Features:</p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>✓ Wireless quiet operation</li>
+                            <li>✓ Good capacity for multi-cat homes</li>
+                            <li>✓ Effective filtration system</li>
+                            <li>✓ Budget-friendly premium features</li>
+                          </ul>
+                        </div>
+
                         <div className="flex flex-wrap gap-3">
-                          <a href="#" rel="sponsored nofollow" className="flex-1 min-w-[200px]">
+                          <a
+                            href="https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro"
+                            target="_blank"
+                            rel="nofollow sponsored"
+                            className="flex-1 min-w-[200px]"
+                          >
                             <Button className="w-full">
-                              Check Price on Amazon
+                              Check Price on PAWAii
                               <ExternalLink className="ml-2 h-4 w-4" />
                             </Button>
                           </a>
                           <Button variant="outline" asChild>
-                            <a href="/reviews/stainless-steel-premium-review">Full Review</a>
+                            <a href="/reviews/pawaii-water-fountain-pro-review">Full Review</a>
                           </Button>
                         </div>
                       </div>
