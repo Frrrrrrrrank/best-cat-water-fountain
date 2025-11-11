@@ -7,6 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Star, CheckCircle2, XCircle } from "lucide-react";
 import wopetW03Image from "@/assets/wopet-w03-main.webp";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
+import pawaiiWirelessProImage from "@/assets/pawaii-wireless-pro-white.png";
+import pawaiiWirelessStandardImage from "@/assets/pawaii-wireless-standard.png";
+import pawaiiProWhiteImage from "@/assets/pawaii-pro-white.jpg";
 
 const BestCatWaterFountain = () => {
   const structuredData = {
@@ -106,6 +109,87 @@ const BestCatWaterFountain = () => {
           "reviewCount": "16",
           "bestRating": "5"
         }
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "PAWAii Wireless Pet Water Fountain Pro",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/pawaii-wireless-pro-white.png",
+          "https://www.pawaii.com/cdn/shop/files/1-white.png"
+        ],
+        "description": "Advanced wireless pet water fountain with smart LED indicators and premium build quality",
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "69.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "42",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 4,
+        "name": "PAWAii Water Fountain Pro",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/pawaii-pro-white.jpg",
+          "https://www.pawaii.com/cdn/shop/files/pw-product-wireless-pet-water-fountain-pro-white-img2.jpg"
+        ],
+        "description": "Mid-range wireless fountain with smart features and easy clean design",
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "49.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "38",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 5,
+        "name": "PAWAii Wireless Pet Water Fountain",
+        "image": [
+          "https://best-cat-water-fountain.com/assets/pawaii-wireless-standard.png",
+          "https://www.pawaii.com/cdn/shop/products/PAWAii-Wireless-Pet-Water-Fountain-img1.png"
+        ],
+        "description": "Most affordable wireless fountain - perfect for budget-conscious cat owners",
+        "brand": {"@type": "Brand", "name": "PAWAii"},
+        "offers": {
+          "@type": "Offer",
+          "price": "39.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "url": "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+          "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"}},
+          "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 30, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "35",
+          "bestRating": "5"
+        }
       }
     ]
   };
@@ -166,6 +250,90 @@ const BestCatWaterFountain = () => {
       ],
       affiliate: "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh",
       reviewLink: "/reviews/wopet-w03l-ceramic-fountain-review",
+    },
+    {
+      rank: 3,
+      name: "PAWAii Wireless Pet Water Fountain Pro",
+      image: pawaiiWirelessProImage,
+      rating: 4.8,
+      badge: "Premium Pick",
+      badgeColor: "bg-badge-premium",
+      bestFor: "Advanced wireless design",
+      material: "BPA-Free Plastic",
+      capacity: "84oz (2.5L)",
+      noise: "< 30dB",
+      price: "$69.99",
+      pros: [
+        "Smart LED water level indicators",
+        "True wireless freedom - place anywhere",
+        "Long-lasting rechargeable battery (18 days)",
+        "Dual color options (white/red)",
+        "Under 30dB quiet operation",
+      ],
+      cons: [
+        "Plastic construction (not ceramic/steel)",
+        "Requires regular charging every 2-3 weeks",
+        "Some color variants may be out of stock",
+        "Smaller capacity than corded options",
+      ],
+      affiliate: "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+      reviewLink: "/reviews/pawaii-wireless-fountain-pro-review",
+    },
+    {
+      rank: 4,
+      name: "PAWAii Water Fountain Pro",
+      image: pawaiiProWhiteImage,
+      rating: 4.6,
+      badge: "Pro Choice",
+      badgeColor: "bg-badge-premium",
+      bestFor: "Smart features & convenience",
+      material: "BPA-Free Plastic",
+      capacity: "84oz (2.5L)",
+      noise: "30-32dB",
+      price: "$49.99",
+      pros: [
+        "Excellent value at $49.99 for wireless",
+        "Wireless convenience without premium price",
+        "Easy to disassemble and clean (5 parts)",
+        "Quiet operation suitable for any room",
+        "Good capacity for 1-2 cats",
+      ],
+      cons: [
+        "Currently out of stock",
+        "Battery life shorter than premium models (14 days)",
+        "Limited to white color only",
+        "Basic plastic construction",
+      ],
+      affiliate: "https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+      reviewLink: "/reviews/pawaii-water-fountain-pro-review",
+    },
+    {
+      rank: 5,
+      name: "PAWAii Wireless Pet Water Fountain",
+      image: pawaiiWirelessStandardImage,
+      rating: 4.5,
+      badge: "Budget Wireless",
+      badgeColor: "bg-badge-value",
+      bestFor: "Affordable wireless option",
+      material: "BPA-Free Plastic",
+      capacity: "68oz (2L)",
+      noise: "32-35dB",
+      price: "$39.99",
+      pros: [
+        "Unbeatable price at $39.99 for wireless",
+        "Lightweight at 862g - easy to move",
+        "Available in white and red colors",
+        "Simple setup and maintenance",
+        "Perfect for 1-2 cats",
+      ],
+      cons: [
+        "Smaller 2L capacity requires frequent refills",
+        "No LED water level indicators",
+        "Battery life shorter (10-12 days)",
+        "Lighter weight means less stable if bumped",
+      ],
+      affiliate: "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+      reviewLink: "/reviews/pawaii-wireless-fountain-review",
     },
   ];
 
