@@ -12,6 +12,11 @@ import NotFound from "./pages/NotFound";
 import WopetW03Review from "./pages/reviews/WopetW03Review";
 import WopetW03LReview from "./pages/reviews/WopetW03LReview";
 
+// Review Pages - PAWAii Products
+import PawaiiWirelessProReview from "./pages/reviews/PawaiiWirelessProReview";
+import PawaiiProReview from "./pages/reviews/PawaiiProReview";
+import PawaiiWirelessReview from "./pages/reviews/PawaiiWirelessReview";
+
 // Comparison Pages
 import CatitVsVeken from "./pages/compare/CatitVsVeken";
 
@@ -57,6 +62,11 @@ const App = () => (
           {/* Review Pages - WOPET Products */}
           <Route path="/reviews/wopet-w03-wireless-ceramic-fountain-review" element={<WopetW03Review />} />
           <Route path="/reviews/wopet-w03l-ceramic-fountain-review" element={<WopetW03LReview />} />
+
+          {/* Review Pages - PAWAii Products */}
+          <Route path="/reviews/pawaii-wireless-fountain-pro-review" element={<PawaiiWirelessProReview />} />
+          <Route path="/reviews/pawaii-water-fountain-pro-review" element={<PawaiiProReview />} />
+          <Route path="/reviews/pawaii-wireless-fountain-review" element={<PawaiiWirelessReview />} />
 
           {/* Comparison Pages */}
           <Route path="/compare/catit-flower-vs-veken-95oz" element={<CatitVsVeken />} />

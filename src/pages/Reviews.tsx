@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Star, ArrowRight, CheckCircle } from "lucide-react";
 import wopetW03Image from "@/assets/wopet-w03-main.webp";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
+import pawaiiWirelessProImage from "@/assets/pawaii-wireless-pro-white.png";
+import pawaiiWirelessStandardImage from "@/assets/pawaii-wireless-standard.png";
+import pawaiiProWhiteImage from "@/assets/pawaii-pro-white.jpg";
 
 const Reviews = () => {
   const reviews = [
@@ -23,6 +26,18 @@ const Reviews = () => {
       affiliateLink: "https://wopet.com/product/wopet-ceramics-wireless-pet-water-fountain-for-dogs-cats-w03/?ref=foeyvtfh"
     },
     {
+      title: "PAWAii Wireless Pet Water Fountain Pro Review",
+      description: "Advanced wireless fountain with smart LED indicators, premium build quality, and exceptional battery life. Perfect for modern homes.",
+      href: "/reviews/pawaii-wireless-fountain-pro-review",
+      image: pawaiiWirelessProImage,
+      rating: 4.8,
+      price: "$69.99",
+      pros: ["Smart LED Indicators", "True Wireless Freedom", "Dual Color Options"],
+      featured: true,
+      badge: "Premium Pick",
+      affiliateLink: "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro"
+    },
+    {
       title: "WOPET W03L Ceramic Fountain Review",
       description: "Premium ceramic fountain at budget price. Ultra-quiet pump, dishwasher safe, perfect for 1-2 cats.",
       href: "/reviews/wopet-w03l-ceramic-fountain-review",
@@ -33,6 +48,30 @@ const Reviews = () => {
       featured: true,
       badge: "Best Value",
       affiliateLink: "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh"
+    },
+    {
+      title: "PAWAii Water Fountain Pro Review",
+      description: "Mid-range wireless fountain offering smart features and convenience at $49.99. Easy clean design with quiet operation.",
+      href: "/reviews/pawaii-water-fountain-pro-review",
+      image: pawaiiProWhiteImage,
+      rating: 4.6,
+      price: "$49.99",
+      pros: ["Wireless Convenience", "Easy Clean Design", "Quiet Operation"],
+      featured: false,
+      badge: "Pro Choice",
+      affiliateLink: "https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro"
+    },
+    {
+      title: "PAWAii Wireless Pet Water Fountain Review",
+      description: "Most affordable wireless fountain at just $39.99. Lightweight, portable, and perfect for budget-conscious cat owners.",
+      href: "/reviews/pawaii-wireless-fountain-review",
+      image: pawaiiWirelessStandardImage,
+      rating: 4.5,
+      price: "$39.99",
+      pros: ["Only $39.99", "Lightweight & Portable", "Wireless Design"],
+      featured: false,
+      badge: "Budget Wireless",
+      affiliateLink: "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro"
     }
   ];
 
@@ -191,7 +230,7 @@ const Reviews = () => {
                               </a>
                             </Button>
                             <Button variant="outline" asChild>
-                              <a href={review.affiliateLink} target="_blank" rel="noopener noreferrer sponsored">Check Price</a>
+                              <a href={review.affiliateLink} target="_blank" rel="nofollow sponsored">Check Price</a>
                             </Button>
                           </div>
                         </div>

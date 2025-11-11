@@ -54,11 +54,16 @@ const AffiliateDisclosure = () => {
                   We also participate in affiliate programs with:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
+                  <li>WOPET Official Store</li>
+                  <li>PAWAii (GoAffPro)</li>
                   <li>Chewy</li>
                   <li>Petco</li>
                   <li>PetSmart</li>
-                  <li>Various pet product manufacturers</li>
+                  <li>Various other pet product manufacturers</li>
                 </ul>
+                <p>
+                  These partnerships allow us to recommend products directly from manufacturers, often with exclusive deals or better availability than third-party retailers.
+                </p>
               </section>
 
               <section className="space-y-4">

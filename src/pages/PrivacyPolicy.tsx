@@ -59,30 +59,41 @@ const PrivacyPolicy = () => {
                 </section>
 
                 <section className="mb-8">
-                  <h2 className="text-2xl font-semibold text-foreground mb-4">3. Cookies</h2>
+                  <h2 className="text-2xl font-semibold text-foreground mb-4">3. Cookies and Tracking Technologies</h2>
                   <p className="text-muted-foreground mb-3">
-                    Our website uses cookies to enhance your browsing experience. Cookies are small text files stored on your device that help us:
+                    Our website uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small text files stored on your device that help us:
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                     <li>Remember your preferences</li>
                     <li>Understand how you use our website</li>
-                    <li>Provide personalized content</li>
+                    <li>Provide personalized content and recommendations</li>
+                    <li>Analyze website performance and traffic patterns</li>
+                    <li>Track affiliate conversions (for products you purchase through our links)</li>
                   </ul>
                   <p className="text-muted-foreground mt-3">
-                    You can control cookie settings through your browser preferences.
+                    <strong>Managing Cookies:</strong> You can control cookie settings through your browser preferences. Note that disabling cookies may affect your experience on our website. Most browsers allow you to refuse cookies, delete existing cookies, or receive warnings before cookies are stored.
                   </p>
                 </section>
 
                 <section className="mb-8">
-                  <h2 className="text-2xl font-semibold text-foreground mb-4">4. Third-Party Services</h2>
+                  <h2 className="text-2xl font-semibold text-foreground mb-4">4. Third-Party Services and Analytics</h2>
                   <p className="text-muted-foreground mb-3">
-                    We use third-party services that may collect information:
+                    We use third-party services that may collect and process information about your visit:
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-                    <li><strong>Analytics:</strong> To understand website traffic and user behavior</li>
-                    <li><strong>Advertising:</strong> We participate in affiliate programs including Amazon Associates</li>
-                    <li><strong>Hosting:</strong> Our website is hosted on secure servers</li>
+                    <li>
+                      <strong>Google Analytics:</strong> We use Google Analytics to understand website traffic, user behavior, and demographics. Google Analytics may use cookies to collect information such as your IP address, browser type, pages visited, and time spent on pages. This information is anonymized and aggregated. You can opt-out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Analytics Opt-out Browser Add-on</a>.
+                    </li>
+                    <li>
+                      <strong>Affiliate Tracking:</strong> We participate in affiliate programs with WOPET, PAWAii (GoAffPro), Amazon Associates, and other retailers. These programs may use cookies to track referrals and attribute purchases to our site. This helps us earn commissions at no extra cost to you.
+                    </li>
+                    <li>
+                      <strong>Content Delivery & Hosting:</strong> Our website is hosted on Cloudflare Pages, which may collect certain technical information for security and performance purposes.
+                    </li>
                   </ul>
+                  <p className="text-muted-foreground mt-3">
+                    Each third-party service has its own privacy policy. We encourage you to review their policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Privacy Policy</a>, <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Cloudflare Privacy Policy</a>.
+                  </p>
                 </section>
 
                 <section className="mb-8">

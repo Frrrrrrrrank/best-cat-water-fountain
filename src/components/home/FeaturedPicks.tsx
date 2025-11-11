@@ -4,6 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star } from "lucide-react";
 import wopetW03Image from "@/assets/wopet-w03-main.webp";
 import wopetW03LImage from "@/assets/wopet-w03l-main.jpg";
+import pawaiiWirelessProImage from "@/assets/pawaii-wireless-pro-white.png";
+import pawaiiWirelessStandardImage from "@/assets/pawaii-wireless-standard.png";
+import pawaiiProWhiteImage from "@/assets/pawaii-pro-white.jpg";
 
 const FeaturedPicks = () => {
   const picks = [
@@ -22,6 +25,19 @@ const FeaturedPicks = () => {
     },
     {
       id: 2,
+      name: "PAWAii Wireless Pet Water Fountain Pro",
+      image: pawaiiWirelessProImage,
+      badge: "Premium Pick",
+      badgeColor: "bg-badge-premium",
+      rating: 4.8,
+      bestFor: "Advanced Wireless Design",
+      price: "$69.99",
+      features: ["True Wireless Freedom", "Smart LED Indicators", "Dual Color Options"],
+      link: "/reviews/pawaii-wireless-fountain-pro-review",
+      affiliateLink: "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+    },
+    {
+      id: 3,
       name: "WOPET W03L Ceramic Fountain",
       image: wopetW03LImage,
       badge: "Best Value",
@@ -32,6 +48,32 @@ const FeaturedPicks = () => {
       features: ["Dishwasher Safe Ceramic", "Ultra Quiet Pump", "Auto Shutoff"],
       link: "/reviews/wopet-w03l-ceramic-fountain-review",
       affiliateLink: "https://wopet.com/product/wopet-ceramic-pet-water-fountain-w03l/?ref=foeyvtfh",
+    },
+    {
+      id: 4,
+      name: "PAWAii Water Fountain Pro",
+      image: pawaiiProWhiteImage,
+      badge: "Pro Choice",
+      badgeColor: "bg-badge-premium",
+      rating: 4.6,
+      bestFor: "Smart Features & Convenience",
+      price: "$49.99",
+      features: ["Wireless Convenience", "Easy Clean Design", "Quiet Operation"],
+      link: "/reviews/pawaii-water-fountain-pro-review",
+      affiliateLink: "https://www.pawaii.com/products/white-water-fountain-pro?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
+    },
+    {
+      id: 5,
+      name: "PAWAii Wireless Pet Water Fountain",
+      image: pawaiiWirelessStandardImage,
+      badge: "Budget Wireless",
+      badgeColor: "bg-badge-value",
+      rating: 4.5,
+      bestFor: "Affordable Wireless Option",
+      price: "$39.99",
+      features: ["Wireless Design", "Lightweight & Portable", "Easy Maintenance"],
+      link: "/reviews/pawaii-wireless-fountain-review",
+      affiliateLink: "https://www.pawaii.com/products/pawaii-wireless-pet-water-fountain?ref=zwyvbrrf&utm_medium=affiliate&utm_source=goaffpro",
     },
   ];
 
@@ -47,7 +89,7 @@ const FeaturedPicks = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {picks.map((pick) => (
             <Link key={pick.id} to={pick.link} className="group">
               <div className="h-full bg-gradient-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">

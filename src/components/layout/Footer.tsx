@@ -25,9 +25,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-foreground">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/best-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Best Fountains</Link></li>
-              <li><Link to="/reviews/catit-flower-fountain-review" className="text-muted-foreground hover:text-primary transition-colors">All Reviews</Link></li>
-              <li><Link to="/compare/catit-flower-vs-veken-95oz" className="text-muted-foreground hover:text-primary transition-colors">Comparisons</Link></li>
-              <li><Link to="/guides/how-to-choose-a-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Guides</Link></li>
+              <li><Link to="/reviews" className="text-muted-foreground hover:text-primary transition-colors">All Reviews</Link></li>
+              <li><Link to="/guides" className="text-muted-foreground hover:text-primary transition-colors">Buying Guides</Link></li>
+              <li><Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
               <li><Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link></li>
             </ul>
           </div>
@@ -39,8 +39,8 @@ const Footer = () => {
               <li><Link to="/best/best-quiet-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Quiet Fountains</Link></li>
               <li><Link to="/best/best-stainless-steel-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Stainless Steel</Link></li>
               <li><Link to="/best/best-ceramic-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Ceramic</Link></li>
-              <li><Link to="/best/best-budget-cat-water-fountain-under-50" className="text-muted-foreground hover:text-primary transition-colors">Budget Options</Link></li>
-              <li><Link to="/best/best-cat-water-fountain-for-multiple-cats" className="text-muted-foreground hover:text-primary transition-colors">Multi-Cat</Link></li>
+              <li><Link to="/best/best-budget-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Budget Options</Link></li>
+              <li><Link to="/best/best-multi-cat-water-fountain" className="text-muted-foreground hover:text-primary transition-colors">Multi-Cat</Link></li>
             </ul>
           </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
               © {currentYear} Best Cat Water Fountain. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground text-center md:text-right max-w-2xl">
-              As an Amazon Associate we earn from qualifying purchases. We may earn a commission from other retailers when you click through our links, at no additional cost to you.
+              As an Amazon Associate we earn from qualifying purchases. We also participate in affiliate programs with WOPET, PAWAii, and other retailers. When you purchase through our links, we may earn a commission at no additional cost to you. See our <Link to="/affiliate-disclosure" className="text-primary hover:underline">Affiliate Disclosure</Link> for details.
             </p>
           </div>
         </div>
