@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
 import FeaturedPicks from "@/components/home/FeaturedPicks";
+import CategoryPreview from "@/components/home/CategoryPreview";
 import TrustSection from "@/components/home/TrustSection";
 
 const Index = () => {
@@ -28,6 +29,7 @@ const Index = () => {
         <main className="flex-1">
           <Hero />
           <FeaturedPicks />
+          <CategoryPreview />
           <TrustSection />
         </main>
         <Footer />

@@ -35,6 +35,7 @@ import MultiCatFountains from "./pages/best/MultiCatFountains";
 // Hub Pages
 import Guides from "./pages/Guides";
 import Reviews from "./pages/Reviews";
+import CategoryHub from "./pages/CategoryHub";
 
 // Other Pages
 import FAQ from "./pages/FAQ";
@@ -76,6 +77,7 @@ const App = () => (
           {/* Hub Pages */}
           <Route path="/guides" element={<Guides />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/best" element={<CategoryHub />} />
 
           {/* Guide Pages */}
           <Route path="/guides/how-to-clean-and-descale-a-fountain" element={<CleaningGuide />} />

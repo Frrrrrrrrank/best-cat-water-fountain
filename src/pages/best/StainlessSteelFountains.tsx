@@ -204,15 +204,17 @@ const StainlessSteelFountains = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-3">
-                        <a href="#" rel="sponsored nofollow" className="flex-1 min-w-[200px]">
+                        <a
+                          href="https://www.amazon.com/s?k=stainless+steel+cat+water+fountain&tag=bestcatwater-20"
+                          target="_blank"
+                          rel="nofollow sponsored"
+                          className="flex-1 min-w-[200px]"
+                        >
                           <Button className="w-full">
-                            Check Price on Amazon
+                            View on Amazon
                             <ExternalLink className="ml-2 h-4 w-4" />
                           </Button>
                         </a>
-                        <Button variant="outline" asChild>
-                          <a href="/reviews/stainless-steel-premium-review">Full Review</a>
-                        </Button>
                       </div>
                     </div>
                   </div>
