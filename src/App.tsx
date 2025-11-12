@@ -86,7 +86,7 @@ const App = () => (
           {/* Best/Ranking Pages */}
           <Route path="/best/best-quiet-cat-water-fountain" element={<QuietFountains />} />
           <Route path="/best/best-stainless-steel-cat-water-fountain" element={<StainlessSteelFountains />} />
-          <Route path="/best/best-budget-cat-water-fountain" element={<BudgetFountains />} />
+          <Route path="/best/best-budget-cat-water-fountain-under-50" element={<BudgetFountains />} />
           <Route path="/best/best-ceramic-cat-water-fountain" element={<CeramicFountains />} />
           <Route path="/best/best-multi-cat-water-fountain" element={<MultiCatFountains />} />
           

@@ -135,12 +135,12 @@ const CategoryHub = () => {
                   {categories.map((category, index) => {
                     const Icon = category.icon;
                     return (
-                      <Card key={index} className="bg-gradient-card border-border p-6 hover:shadow-lg transition-shadow">
+                      <Card key={index} className="bg-gradient-card border-border p-6 hover:shadow-lg transition-shadow flex flex-col h-full">
                         <div className="flex items-start gap-4 mb-4">
-                          <div className={`${category.bgColor} rounded-lg p-3`}>
+                          <div className={`${category.bgColor} rounded-lg p-3 flex-shrink-0`}>
                             <Icon className={`h-6 w-6 ${category.iconColor}`} />
                           </div>
-                          <div className="flex-1">
+                          <div className="flex-1 min-w-0">
                             <h2 className="text-2xl font-bold text-foreground mb-2">
                               {category.title}
                             </h2>
@@ -155,11 +155,11 @@ const CategoryHub = () => {
                           </div>
                         </div>
 
-                        <p className="text-muted-foreground mb-6">
+                        <p className="text-muted-foreground mb-6 flex-grow">
                           {category.description}
                         </p>
 
-                        <Button asChild className="w-full">
+                        <Button asChild className="w-full mt-auto">
                           <Link to={`/best/${category.slug}`}>
                             View Guide
                             <ArrowRight className="ml-2 h-4 w-4" />
@@ -219,32 +219,32 @@ const CategoryHub = () => {
                 </h2>
 
                 <div className="grid md:grid-cols-3 gap-6">
-                  <Card className="bg-gradient-card border-border p-6">
+                  <Card className="bg-gradient-card border-border p-6 flex flex-col h-full">
                     <h3 className="font-semibold text-foreground mb-2">Overall Best</h3>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-muted-foreground mb-4 flex-grow">
                       See our top-rated fountains across all categories
                     </p>
-                    <Button variant="outline" size="sm" asChild className="w-full">
+                    <Button variant="outline" size="sm" asChild className="w-full mt-auto">
                       <Link to="/best-cat-water-fountain">View Rankings</Link>
                     </Button>
                   </Card>
 
-                  <Card className="bg-gradient-card border-border p-6">
+                  <Card className="bg-gradient-card border-border p-6 flex flex-col h-full">
                     <h3 className="font-semibold text-foreground mb-2">All Reviews</h3>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-muted-foreground mb-4 flex-grow">
                       Browse individual fountain reviews
                     </p>
-                    <Button variant="outline" size="sm" asChild className="w-full">
+                    <Button variant="outline" size="sm" asChild className="w-full mt-auto">
                       <Link to="/reviews">View Reviews</Link>
                     </Button>
                   </Card>
 
-                  <Card className="bg-gradient-card border-border p-6">
+                  <Card className="bg-gradient-card border-border p-6 flex flex-col h-full">
                     <h3 className="font-semibold text-foreground mb-2">Buying Guide</h3>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-sm text-muted-foreground mb-4 flex-grow">
                       Learn what to look for in a fountain
                     </p>
-                    <Button variant="outline" size="sm" asChild className="w-full">
+                    <Button variant="outline" size="sm" asChild className="w-full mt-auto">
                       <Link to="/guides/how-to-choose-a-cat-water-fountain">Read Guide</Link>
                     </Button>
                   </Card>

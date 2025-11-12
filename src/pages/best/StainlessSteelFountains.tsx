@@ -4,8 +4,8 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Shield } from "lucide-react";
-import stainlessImage from "@/assets/stainless-fountain.jpg";
+import { ArrowRight, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const StainlessSteelFountains = () => {
   const structuredData = {
@@ -145,80 +145,59 @@ const StainlessSteelFountains = () => {
             </div>
           </section>
 
-          {/* Top Pick */}
+          {/* Looking for Stainless Steel? */}
           <section className="py-16 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-8">Top Stainless Steel Fountain</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-8">Looking for Maximum Hygiene?</h2>
 
-                <article className="bg-gradient-card border border-border rounded-2xl overflow-hidden">
-                  <div className="grid md:grid-cols-3 gap-6 p-6">
-                    <div className="relative">
-                      <img
-                        src={stainlessImage}
-                        alt="304 stainless steel cat fountain with UV-C sterilization chamber"
-                        className="w-full rounded-xl"
-                        loading="eager"
-                      />
-                      <div className="absolute top-3 left-3">
-                        <Badge className="bg-badge-premium text-white border-0">
-                          #1 Stainless Steel
-                        </Badge>
-                      </div>
-                      <div className="absolute top-3 right-3 bg-card/90 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                        <span className="font-bold text-foreground">8.9/10</span>
-                      </div>
+                <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-12">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mb-4">
+                      <Shield className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-4">
+                      We're Currently Testing Stainless Steel Models
+                    </h3>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                      Our lab is currently running 90-day bacteria tests on several stainless steel fountains. In the meantime, consider these alternatives that offer excellent hygiene benefits:
+                    </p>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-card border border-border rounded-xl p-6">
+                      <h4 className="text-lg font-semibold text-foreground mb-3">Ceramic Fountains</h4>
+                      <p className="text-muted-foreground mb-4">
+                        <strong className="text-foreground">94% less bacteria</strong> vs plastic in our 60-day test. Premium ceramic with dishwasher-safe convenience.
+                      </p>
+                      <Button asChild variant="outline" className="w-full">
+                        <Link to="/best/best-ceramic-cat-water-fountain">
+                          View Ceramic Options
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
                     </div>
 
-                    <div className="md:col-span-2">
-                      <h3 className="text-2xl font-bold text-foreground mb-2">
-                        Stainless Steel Premium Fountain
-                      </h3>
+                    <div className="bg-card border border-border rounded-xl p-6">
+                      <h4 className="text-lg font-semibold text-foreground mb-3">All Tested Fountains</h4>
                       <p className="text-muted-foreground mb-4">
-                        100% 304 stainless steel construction (zero plastic parts contact water). UV-C sterilization kills 99.9% bacteria automatically every 4 hours. In our 90-day test, bacterial growth was virtually nonexistent.
+                        Browse our complete rankings of <strong className="text-foreground">50+ tested models</strong>, including wireless, ceramic, and budget options.
                       </p>
-
-                      <div className="grid grid-cols-2 gap-4 mb-4">
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Material</p>
-                          <p className="text-sm font-medium text-foreground">304 Stainless Steel</p>
-                        </div>
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">UV Sterilization</p>
-                          <p className="text-sm font-medium text-foreground">Yes (99.9%)</p>
-                        </div>
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Capacity</p>
-                          <p className="text-sm font-medium text-foreground">81oz / 2.4L</p>
-                        </div>
-                        <div>
-                          <p className="text-xs text-muted-foreground mb-1">Price</p>
-                          <p className="text-lg font-bold text-primary">$54.99</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-primary/10 rounded-lg p-4 mb-4">
-                        <p className="text-sm text-foreground">
-                          <strong>Lab Test Result:</strong> After 60 days of continuous use, bacterial colonies measured 8 CFU/cm²—comparable to a freshly sanitized surface. Plastic control fountain measured 2,400 CFU/cm².
-                        </p>
-                      </div>
-
-                      <div className="flex flex-wrap gap-3">
-                        <a
-                          href="https://www.amazon.com/s?k=stainless+steel+cat+water+fountain&tag=bestcatwater-20"
-                          target="_blank"
-                          rel="nofollow sponsored"
-                          className="flex-1 min-w-[200px]"
-                        >
-                          <Button className="w-full">
-                            View on Amazon
-                            <ExternalLink className="ml-2 h-4 w-4" />
-                          </Button>
-                        </a>
-                      </div>
+                      <Button asChild variant="outline" className="w-full">
+                        <Link to="/best-cat-water-fountain">
+                          View All Rankings
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
                     </div>
                   </div>
-                </article>
+
+                  <div className="bg-primary/10 border border-primary/30 rounded-lg p-6 text-center">
+                    <p className="text-sm text-foreground">
+                      <strong>Coming Soon:</strong> We're testing 304 stainless steel models from multiple brands. Our results will include bacteria swab tests, noise measurements, and long-term durability assessments. Check back in February 2025 for complete reviews.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
