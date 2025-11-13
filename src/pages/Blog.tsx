@@ -9,6 +9,15 @@ import { ArrowRight, Droplets, Heart, Calendar, Sparkles } from "lucide-react";
 const Blog = () => {
   const articles = [
     {
+      title: "Why Ceramic Cat Water Fountains Are Best: 94% Less Bacteria Proven",
+      description: "Lab tests prove ceramic fountains have 94% less bacteria than plastic. Discover why ceramic is the healthiest material for the best cat water fountain.",
+      href: "/blog/why-ceramic-cat-water-fountains-are-best",
+      category: "Buying Guide",
+      readTime: "9 min read",
+      icon: <Sparkles className="h-5 w-5" />,
+      featured: true
+    },
+    {
       title: "Why Do Cats Need Water Fountains? 7 Health Benefits Explained",
       description: "Discover why vets recommend water fountains for cats. Learn 7 proven health benefits including increased hydration and kidney disease prevention.",
       href: "/blog/why-cats-need-water-fountains",
@@ -76,7 +85,7 @@ const Blog = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-foreground mb-8">Featured Articles</h2>
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {articles.filter(article => article.featured).map((article, index) => (
                     <article key={index} className="bg-gradient-card border border-border rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                       <div className="p-6">

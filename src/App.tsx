@@ -47,6 +47,7 @@ import Blog from "./pages/Blog";
 import WhyCatsNeedFountains from "./pages/blog/WhyCatsNeedFountains";
 import HowOftenChangeFilter from "./pages/blog/HowOftenChangeFilter";
 import PlasticVsStainlessVsCeramic from "./pages/blog/PlasticVsStainlessVsCeramic";
+import WhyCeramicCatFountains from "./pages/blog/WhyCeramicCatFountains";
 
 const queryClient = new QueryClient();
 
@@ -92,6 +93,7 @@ const App = () => (
           
           {/* Blog Pages */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/why-ceramic-cat-water-fountains-are-best" element={<WhyCeramicCatFountains />} />
           <Route path="/blog/why-cats-need-water-fountains" element={<WhyCatsNeedFountains />} />
           <Route path="/blog/how-often-change-cat-fountain-filter" element={<HowOftenChangeFilter />} />
           <Route path="/blog/plastic-vs-stainless-steel-vs-ceramic-cat-fountains" element={<PlasticVsStainlessVsCeramic />} />
