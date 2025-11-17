@@ -4,10 +4,19 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Droplets, Heart, Calendar, Sparkles } from "lucide-react";
+import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle } from "lucide-react";
 
 const Blog = () => {
   const articles = [
+    {
+      title: "Cat Hydration Guide: 10 Essential Tips Every Owner Must Know",
+      description: "60-70% of cats are dehydrated. Learn exactly how much water cats need, signs of dehydration, and why the best cat water fountain increases intake by 50%.",
+      href: "/blog/cat-hydration-tips-how-much-water",
+      category: "Health & Care",
+      readTime: "10 min read",
+      icon: <Droplets className="h-5 w-5" />,
+      featured: true
+    },
     {
       title: "Why Ceramic Cat Water Fountains Are Best: 94% Less Bacteria Proven",
       description: "Lab tests prove ceramic fountains have 94% less bacteria than plastic. Discover why ceramic is the healthiest material for the best cat water fountain.",
