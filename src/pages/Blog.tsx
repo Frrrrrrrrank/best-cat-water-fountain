@@ -4,10 +4,19 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle } from "lucide-react";
+import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical } from "lucide-react";
 
 const Blog = () => {
   const articles = [
+    {
+      title: "2025 Research: Science-Backed Methods to Increase Cat Water Intake by 3x",
+      description: "New University of Wisconsin study proves cats drink 38.9 vs 13.7 ml/kg/day using evidence-based methods. Latest veterinary research on the best cat water fountain.",
+      href: "/blog/science-backed-methods-increase-cat-water-intake",
+      category: "Research & Science",
+      readTime: "11 min read",
+      icon: <FlaskConical className="h-5 w-5" />,
+      featured: true
+    },
     {
       title: "Cat Hydration Guide: 10 Essential Tips Every Owner Must Know",
       description: "60-70% of cats are dehydrated. Learn exactly how much water cats need, signs of dehydration, and why the best cat water fountain increases intake by 50%.",
