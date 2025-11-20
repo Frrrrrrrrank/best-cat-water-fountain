@@ -4,10 +4,19 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical } from "lucide-react";
+import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin } from "lucide-react";
 
 const Blog = () => {
   const articles = [
+    {
+      title: "Where to Place Your Cat Water Fountain: 7 Science-Backed Rules (2025)",
+      description: "2025 research proves cats drink 30% more water when fountains are placed correctly. Learn the 7 science-backed placement rules for optimal hydration.",
+      href: "/blog/where-to-place-cat-water-fountain",
+      category: "Research & Science",
+      readTime: "8 min read",
+      icon: <MapPin className="h-5 w-5" />,
+      featured: true
+    },
     {
       title: "2025 Research: Science-Backed Methods to Increase Cat Water Intake by 3x",
       description: "New University of Wisconsin study proves cats drink 38.9 vs 13.7 ml/kg/day using evidence-based methods. Latest veterinary research on the best cat water fountain.",

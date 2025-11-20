@@ -50,6 +50,7 @@ import PlasticVsStainlessVsCeramic from "./pages/blog/PlasticVsStainlessVsCerami
 import WhyCeramicCatFountains from "./pages/blog/WhyCeramicCatFountains";
 import CatHydrationTips from "./pages/blog/CatHydrationTips";
 import ScienceBackedHydration from "./pages/blog/ScienceBackedHydration";
+import CatWaterBowlPlacement from "./pages/blog/CatWaterBowlPlacement";
 
 const queryClient = new QueryClient();
 
@@ -95,6 +96,7 @@ const App = () => (
           
           {/* Blog Pages */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/where-to-place-cat-water-fountain" element={<CatWaterBowlPlacement />} />
           <Route path="/blog/science-backed-methods-increase-cat-water-intake" element={<ScienceBackedHydration />} />
           <Route path="/blog/cat-hydration-tips-how-much-water" element={<CatHydrationTips />} />
           <Route path="/blog/why-ceramic-cat-water-fountains-are-best" element={<WhyCeramicCatFountains />} />
