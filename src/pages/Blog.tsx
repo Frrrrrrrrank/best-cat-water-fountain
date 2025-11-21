@@ -9,6 +9,15 @@ import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskCo
 const Blog = () => {
   const articles = [
     {
+      title: "How Cat Hydration Impacts Sleep Quality & Lifespan: 2025 Research",
+      description: "Veterinary research proves proper hydration can double cat lifespan. Learn how water fountains prevent kidney disease and improve sleep quality.",
+      href: "/blog/cat-hydration-impact-sleep-lifespan",
+      category: "Health & Longevity",
+      readTime: "10 min read",
+      icon: <Heart className="h-5 w-5" />,
+      featured: true
+    },
+    {
       title: "Where to Place Your Cat Water Fountain: 7 Science-Backed Rules (2025)",
       description: "2025 research proves cats drink 30% more water when fountains are placed correctly. Learn the 7 science-backed placement rules for optimal hydration.",
       href: "/blog/where-to-place-cat-water-fountain",
