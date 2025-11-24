@@ -9,6 +9,15 @@ import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskCo
 const Blog = () => {
   const articles = [
     {
+      title: "Water Quality & Cat Health: Why Filtered Water Can Save Your Cat's Life",
+      description: "2025 research reveals tap water contaminants can harm cats. Discover why the best cat water fountain with activated carbon filtration is essential.",
+      href: "/blog/water-quality-impact-cat-health",
+      category: "Water Quality & Health",
+      readTime: "9 min read",
+      icon: <Droplets className="h-5 w-5" />,
+      featured: true
+    },
+    {
       title: "How Cat Hydration Impacts Sleep Quality & Lifespan: 2025 Research",
       description: "Veterinary research proves proper hydration can double cat lifespan. Learn how water fountains prevent kidney disease and improve sleep quality.",
       href: "/blog/cat-hydration-impact-sleep-lifespan",

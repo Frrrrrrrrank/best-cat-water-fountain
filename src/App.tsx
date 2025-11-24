@@ -52,6 +52,7 @@ import CatHydrationTips from "./pages/blog/CatHydrationTips";
 import ScienceBackedHydration from "./pages/blog/ScienceBackedHydration";
 import CatWaterBowlPlacement from "./pages/blog/CatWaterBowlPlacement";
 import CatHydrationLifespanSleep from "./pages/blog/CatHydrationLifespanSleep";
+import WaterQualityCatHealth from "./pages/blog/WaterQualityCatHealth";
 
 const queryClient = new QueryClient();
 
@@ -97,6 +98,7 @@ const App = () => (
           
           {/* Blog Pages */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/water-quality-impact-cat-health" element={<WaterQualityCatHealth />} />
           <Route path="/blog/cat-hydration-impact-sleep-lifespan" element={<CatHydrationLifespanSleep />} />
           <Route path="/blog/where-to-place-cat-water-fountain" element={<CatWaterBowlPlacement />} />
           <Route path="/blog/science-backed-methods-increase-cat-water-intake" element={<ScienceBackedHydration />} />
