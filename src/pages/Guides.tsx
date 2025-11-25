@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Droplets, Wrench, ArrowRight } from "lucide-react";
+import { BookOpen, Droplets, Wrench, ArrowRight, GraduationCap } from "lucide-react";
 
 const Guides = () => {
   const guides = [
@@ -15,6 +15,15 @@ const Guides = () => {
       category: "Buying Guide",
       readTime: "12 min read",
       icon: <BookOpen className="h-5 w-5" />,
+      featured: true
+    },
+    {
+      title: "How to Train Your Cat to Use a Water Fountain",
+      description: "90% success rate training method for cat fountains. 7-day proven method for reluctant cats, from placement to full adoption.",
+      href: "/guides/how-to-train-your-cat-to-use-a-water-fountain",
+      category: "Training Guide",
+      readTime: "11 min read",
+      icon: <GraduationCap className="h-5 w-5" />,
       featured: true
     },
     {
@@ -76,7 +85,7 @@ const Guides = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-foreground mb-8">Essential Guides</h2>
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {guides.map((guide, index) => (
                     <article key={index} className="bg-gradient-card border border-border rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                       <div className="p-6">
