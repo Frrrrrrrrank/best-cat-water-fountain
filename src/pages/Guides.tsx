@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Droplets, Wrench, ArrowRight, GraduationCap } from "lucide-react";
+import { BookOpen, Droplets, Wrench, ArrowRight, GraduationCap, AlertCircle } from "lucide-react";
 
 const Guides = () => {
   const guides = [
@@ -33,6 +33,15 @@ const Guides = () => {
       category: "Maintenance",
       readTime: "8 min read",
       icon: <Wrench className="h-5 w-5" />,
+      featured: true
+    },
+    {
+      title: "Why Your Cat Won't Drink from the Fountain",
+      description: "Troubleshoot 8 common reasons cats refuse fountains. Proven fixes for noise, location, taste issues. Includes dehydration warning signs.",
+      href: "/guides/why-your-cat-wont-drink-from-the-fountain",
+      category: "Troubleshooting",
+      readTime: "13 min read",
+      icon: <AlertCircle className="h-5 w-5" />,
       featured: true
     }
   ];
@@ -85,7 +94,7 @@ const Guides = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-foreground mb-8">Essential Guides</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 gap-8">
                   {guides.map((guide, index) => (
                     <article key={index} className="bg-gradient-card border border-border rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                       <div className="p-6">

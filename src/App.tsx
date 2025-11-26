@@ -25,6 +25,7 @@ import CatitVsVeken from "./pages/compare/CatitVsVeken";
 import CleaningGuide from "./pages/guides/CleaningGuide";
 import BuyingGuide from "./pages/guides/BuyingGuide";
 import TrainingGuide from "./pages/guides/TrainingGuide";
+import CatWontDrinkFromFountain from "./pages/guides/CatWontDrinkFromFountain";
 
 // Best/Ranking Pages
 import QuietFountains from "./pages/best/QuietFountains";
@@ -90,6 +91,7 @@ const App = () => (
           <Route path="/guides/how-to-clean-and-descale-a-fountain" element={<CleaningGuide />} />
           <Route path="/guides/how-to-choose-a-cat-water-fountain" element={<BuyingGuide />} />
           <Route path="/guides/how-to-train-your-cat-to-use-a-water-fountain" element={<TrainingGuide />} />
+          <Route path="/guides/why-your-cat-wont-drink-from-the-fountain" element={<CatWontDrinkFromFountain />} />
           
           {/* Best/Ranking Pages */}
           <Route path="/best/best-quiet-cat-water-fountain" element={<QuietFountains />} />
