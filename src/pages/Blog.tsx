@@ -4,10 +4,19 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin } from "lucide-react";
+import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin, Calculator } from "lucide-react";
 
 const Blog = () => {
   const articles = [
+    {
+      title: "How Much Water Should Cats Drink? Age-Based Hydration Guide (2025)",
+      description: "Kittens need 4-6 oz daily, adults 3.5-4.5 oz per 5 lbs, seniors 20% more. Calculate exact needs, spot dehydration signs, and boost intake by 50%.",
+      href: "/blog/how-much-water-should-cats-drink-by-age",
+      category: "Health & Care",
+      readTime: "12 min read",
+      icon: <Calculator className="h-5 w-5" />,
+      featured: true
+    },
     {
       title: "Water Quality & Cat Health: Why Filtered Water Can Save Your Cat's Life",
       description: "2025 research reveals tap water contaminants can harm cats. Discover why the best cat water fountain with activated carbon filtration is essential.",
