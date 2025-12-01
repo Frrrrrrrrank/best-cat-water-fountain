@@ -56,6 +56,7 @@ import CatWaterBowlPlacement from "./pages/blog/CatWaterBowlPlacement";
 import CatHydrationLifespanSleep from "./pages/blog/CatHydrationLifespanSleep";
 import WaterQualityCatHealth from "./pages/blog/WaterQualityCatHealth";
 import CatWaterNeedsByAge from "./pages/blog/CatWaterNeedsByAge";
+import CatsPreferRunningWater from "./pages/blog/CatsPreferRunningWater";
 
 const queryClient = new QueryClient();
 
@@ -113,6 +114,7 @@ const App = () => (
           <Route path="/blog/how-often-change-cat-fountain-filter" element={<HowOftenChangeFilter />} />
           <Route path="/blog/plastic-vs-stainless-steel-vs-ceramic-cat-fountains" element={<PlasticVsStainlessVsCeramic />} />
           <Route path="/blog/how-much-water-should-cats-drink-by-age" element={<CatWaterNeedsByAge />} />
+          <Route path="/blog/do-cats-prefer-running-water-science" element={<CatsPreferRunningWater />} />
 
           {/* Legal Pages */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

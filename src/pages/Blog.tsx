@@ -4,10 +4,19 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin, Calculator } from "lucide-react";
+import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin, Calculator, Brain } from "lucide-react";
 
 const Blog = () => {
   const articles = [
+    {
+      title: "Do Cats Prefer Running Water? Science Behind Why Cats Love Fountains",
+      description: "Scientific research proves cats drink 184% more from running water. Discover evolutionary reasons, sensory preferences, and why fountains are essential.",
+      href: "/blog/do-cats-prefer-running-water-science",
+      category: "Behavioral Science",
+      readTime: "14 min read",
+      icon: <Brain className="h-5 w-5" />,
+      featured: true
+    },
     {
       title: "How Much Water Should Cats Drink? Age-Based Hydration Guide (2025)",
       description: "Kittens need 4-6 oz daily, adults 3.5-4.5 oz per 5 lbs, seniors 20% more. Calculate exact needs, spot dehydration signs, and boost intake by 50%.",
