@@ -9,6 +9,15 @@ import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskCo
 const Blog = () => {
   const articles = [
     {
+      title: "Cat Dehydration: 11 Warning Signs, Dangers & Prevention (2025)",
+      description: "Vet-reviewed guide reveals emergency dehydration signs in cats. Learn to recognize symptoms early and prevent kidney disease with proven hydration methods.",
+      href: "/blog/cat-dehydration-warning-signs-prevention",
+      category: "Health & Safety",
+      readTime: "15 min read",
+      icon: <AlertTriangle className="h-5 w-5" />,
+      featured: true
+    },
+    {
       title: "Do Cats Prefer Running Water? Science Behind Why Cats Love Fountains",
       description: "Scientific research proves cats drink 184% more from running water. Discover evolutionary reasons, sensory preferences, and why fountains are essential.",
       href: "/blog/do-cats-prefer-running-water-science",
