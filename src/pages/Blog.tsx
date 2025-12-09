@@ -4,10 +4,19 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin, Calculator, Brain } from "lucide-react";
+import { ArrowRight, Droplets, Heart, Calendar, Sparkles, AlertTriangle, FlaskConical, MapPin, Calculator, Brain, TrendingUp } from "lucide-react";
 
 const Blog = () => {
   const articles = [
+    {
+      title: "Cat Won't Drink Water? 15 Proven Solutions to Increase Intake by 184%",
+      description: "Complete guide with 15 vet-approved methods to solve low water intake. From fountains to placement strategies—discover what actually works.",
+      href: "/blog/cat-wont-drink-enough-water-solutions",
+      category: "Solutions & Tips",
+      readTime: "18 min read",
+      icon: <TrendingUp className="h-5 w-5" />,
+      featured: true
+    },
     {
       title: "Cat Dehydration: 11 Warning Signs, Dangers & Prevention (2025)",
       description: "Vet-reviewed guide reveals emergency dehydration signs in cats. Learn to recognize symptoms early and prevent kidney disease with proven hydration methods.",
