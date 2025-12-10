@@ -59,6 +59,7 @@ import CatWaterNeedsByAge from "./pages/blog/CatWaterNeedsByAge";
 import CatsPreferRunningWater from "./pages/blog/CatsPreferRunningWater";
 import CatDehydrationSigns from "./pages/blog/CatDehydrationSigns";
 import CatWontDrinkWater from "./pages/blog/CatWontDrinkWater";
+import CatKidneyDiseaseHydration from "./pages/blog/CatKidneyDiseaseHydration";
 
 const queryClient = new QueryClient();
 
@@ -119,6 +120,7 @@ const App = () => (
           <Route path="/blog/do-cats-prefer-running-water-science" element={<CatsPreferRunningWater />} />
           <Route path="/blog/cat-dehydration-warning-signs-prevention" element={<CatDehydrationSigns />} />
           <Route path="/blog/cat-wont-drink-enough-water-solutions" element={<CatWontDrinkWater />} />
+          <Route path="/blog/cat-kidney-disease-hydration-prevention" element={<CatKidneyDiseaseHydration />} />
 
           {/* Legal Pages */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
